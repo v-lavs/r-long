@@ -1,4 +1,6 @@
 .section-banner{
+  display: flex;
+  align-items: center;
   min-height: 1127px;
   background: linear-gradient(283.67deg, #94cdf5 0%, #bddef6 41.15%, #e3f3ff 100%);
   &__slogan{
