@@ -1,0 +1,42 @@
+@import 'utils/variables';
+@import 'utils/mixins';
+
+@import '../lib/swiper/swiper-bundle.min';
+
+@import 'base/reset';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/anim';
+
+@import 'components/button';
+@import 'components/nav';
+@import 'components/slider';
+@import 'components/search-bar';
+@import 'components/accordion';
+@import 'components/breadcrumb';
+@import 'components/pagination';
+@import 'components/card-author';
+
+
+
+@import 'layout/layout';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'layout/sections/section-banner';
+@import 'layout/sections/section-blog';
+@import 'layout/sections/related-post';
+@import 'layout/sections/question';
+@import 'layout/sections/restriction';
+@import 'layout/sections/procedure';
+@import 'layout/sections/types-anesthesia';
+@import 'layout/sections/about';
+@import 'layout/sections/assess-pain';
+@import 'layout/sections/advantages';
+@import 'layout/sections/video-block';
+
+
+
+@import 'pages/privacy-policy';
+@import 'pages/page';

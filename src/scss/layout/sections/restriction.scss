@@ -1,0 +1,38 @@
+.restriction {
+  .heading {
+    max-width: 580px;
+    width: 100%;
+    margin: 0 auto 46px;
+  }
+
+  &__list {
+    display: flex;
+    margin: 0 -7px;
+  }
+
+  &__list-item {
+    width: 20%;
+    padding: 0 7px;
+  }
+}
+
+.card-restriction {
+  background: #FFFFFF;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 20px 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  height: 100%;
+
+  &__thumb {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}

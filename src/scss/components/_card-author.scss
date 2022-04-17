@@ -1,0 +1,29 @@
+.card-author{
+  background: #f3f5f8;
+  border-radius: 80px;
+  padding: 118px 0;
+  margin: 40px 0;
+  .container{
+    display: flex;
+  }
+
+  &__avatar{
+    width: 220px;
+    height: 220px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .part-right{
+    padding-left: 40px;
+    padding-top: 25px;
+  }
+  &__title{
+    font-size: 36px;
+  }
+  .activity{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+}

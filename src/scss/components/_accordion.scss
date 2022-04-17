@@ -1,0 +1,120 @@
+.accordion {
+  .panel {
+    width: 100%;
+    background-color: #f3f5f8;
+    padding: 40px 60px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &__title {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.17;
+      max-width: 964px;
+      width: 100%;
+    }
+
+    &__heading {
+      position: relative;
+      padding: 0 35px 0 0;
+      transition: .7s;
+
+    }
+  }
+
+  .answer {
+    color: #f16330;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .open-panel {
+    position: absolute;
+    display: flex;
+    width: 42px;
+    height: 42px;
+    top: -8px;
+    right: 0;
+    border-radius: 50%;
+    border: 2px solid #2395e8;
+    background-color: #2395e8;
+
+    &:before {
+      position: absolute;
+      content: '';
+      background-image: url(../assets/img/check.svg);
+      width: 22px;
+      height: 15px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .panel-collapse {
+    display: none;
+
+    &__body {
+      line-height: 1.5;
+      max-width: 964px;
+      width: 100%;
+    }
+  }
+
+  .open {
+    display: block;
+
+    .open-panel {
+      transition: transform .5s;
+      transform: rotate(-180deg);
+      background-color: transparent;
+
+      &:before {
+        filter: invert(31%) sepia(28%) saturate(5000%) hue-rotate(168deg) brightness(88%) contrast(82%);
+      }
+    }
+  }
+
+  @include respond-to($md) {
+    .panel__heading {
+      cursor: pointer;
+    }
+  }
+  @include respond-to($sm) {
+    .panel{
+      position: relative;
+      padding: 40px 20px 100px;
+      .answer,
+      &__title{
+        font-size: 16px;
+      }
+    }
+    .panel__heading {
+      position: static;
+    }
+
+    .open-panel {
+      width: 40px;
+      height: 40px;
+      top: auto;
+      bottom: 40px;
+      left: 20px;
+    }
+
+    .panel-collapse__body {
+      font-size: 16px;
+      line-height: 1.375;
+    }
+  }
+  @include respond-to($xs){
+  }
+}

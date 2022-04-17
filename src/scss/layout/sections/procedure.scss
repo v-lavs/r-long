@@ -1,0 +1,134 @@
+.procedure {
+  background-color: #f3f5f8;
+  border-radius: 80px;
+  background-image: url(../assets/img/arrows.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  min-height: 1762px;
+  padding: 180px 0 172px;
+  margin-bottom: 100px;
+
+  .heading {
+    margin-bottom: 86px;
+  }
+
+  &__info {
+    position: relative;
+    max-width: 938px;
+    background: #f16330;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 15px 30px 15px 74px;
+    margin: 0 auto;
+
+    &:before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-image: url(../assets/img/info.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      left: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 190px;
+  }
+
+  &__step {
+    max-width: 700px;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:nth-child(odd) {
+      margin-left: auto;
+    }
+    &:nth-child(even) {
+       .card__step{
+         margin-left: auto;
+       }
+     }
+  }
+
+  .card {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+
+    &__step {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f16330;
+      color: #ffffff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1;
+      margin-bottom: 15px;
+    }
+
+    &__thumb {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      border: 2px solid #2395E8;
+      border-radius: 10px;
+      flex-shrink: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      &:before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 64px;
+        height: 7px;
+        background-image: url(../assets/img/line.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        top: 50%;
+
+      }
+
+      &:nth-child(odd):before {
+        transform: translate(100%, -50%);
+        right: -17px;
+      }
+
+      &:nth-child(even):before {
+        transform: translate(-100%, -50%) rotate(180deg);
+        left: -17px;
+      }
+    }
+
+    &__body {
+      padding-bottom: 10px;
+      padding-right: 95px;
+      text-align: right;
+
+    }
+    .to-left {
+      padding-right: 0;
+      padding-left: 95px;
+      text-align: left;
+      margin-left: 0;
+    }
+  }
+}
+

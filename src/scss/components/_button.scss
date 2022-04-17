@@ -1,0 +1,75 @@
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  transition: .35s;
+  font-size: 18px;
+  font-family: $main-font;
+  border-radius: 100px;
+  min-width: 289px;
+  padding: 25px 10px 26px;
+}
+
+.search-btn,
+.btn-back,
+.close-btn {
+  background-color: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 21px 25px;
+}
+
+.search-btn {
+  background-image: url(../assets/img/search.svg);
+}
+
+.btn-round {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &_back {
+    display: inline-block;
+    position: fixed;
+    right: 5.2%;
+    bottom: 40vh;
+    background-image: url(../assets/img/scroll-top.svg);
+    background-size: 21px 25px;
+    background-color: #f16330;
+    transition: background-color .3s,
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+
+    &.show {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &_play {
+    width: 100px;
+    height: 100px;
+    background-color: #2395e8;
+    transform: rotate(-90deg);
+    background-image: url(../assets/img/check.svg);
+    background-size: 49px 31px;
+  }
+}
+
+
+.close-btn {
+  background-image: url(../assets/img/close.svg);
+}
+
+
+
+
+

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--зaкрыть индексацию -->
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="robots" content="noindex">
+    <meta name="yandex" content="none">
+    <!------------------------------>
+    <title>Kit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./dist/main.css">
+</head>
+<body>
+<style>
+    .separator {
+        padding: 60px 0;
+        color: red;
+    }
+</style>
+<div class="wrapper">
+    <div class="separator"></div>
+    --------------------------------------------------------------------------------------------
+    <header class="header">
+        <div class="container-full">
+            <button class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <a href="#" class="header__logo">
+                <img src="assets/img/logo-header.svg" alt="лого ЮРІЯ-ФАРМ">
+            </a>
+
+            <nav class="header__nav">
+                <button class="btn-close"></button>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#about_anesthesia" class="menu__link">Про знеболення пологів</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#video" class="menu__link">Відео-лекції</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="blog.html" class="menu__link">Фахівцям</a>
+                    </li>
+                </ul>
+
+                <div class="lang__toggle lang__toggle_mob">
+                    <a href="#" class="lang__link active">UA</a>
+                    <a href="#" class="lang__link">RU</a>
+                </div>
+            </nav>
+
+            <div class="lang__toggle lang__toggle_desk">
+                <a href="#" class="lang__link active">UA</a>
+                <a href="#" class="lang__link">RU</a>
+            </div>
+
+            <button type="button" class="search-open" id="openSearch">Пошук</button>
+
+            <div class="search-bar">
+                <form action="/" method="get" class="search-form">
+                    <div class="input-group">
+                        <button type="submit" class="search-btn"><span class="icon-search"></span>
+                        </button>
+                        <input type="text" name="s" class="form-control" placeholder="Пошук...">
+                        <button type="button" class="close-btn" id="closeSearch"></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <div class="backdrop"></div>
+
+
+    -----------------------------------------------------------------------------------------------
+    <div class="separator"></div>
+    --------------------------------------------------------------------------------------------
+
+    <footer class="footer">
+        <div class="container-full">
+            <div class="footer_top">
+
+                <a href="#" class="footer__logo">
+                    <img src="assets/img/logo-header.svg" alt="лого ЮРІЯ-ФАРМ">
+                </a>
+
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#about_anesthesia" class="menu__link">Про знеболення пологів</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#video" class="menu__link">Відео-лекції</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="blog.html" class="menu__link">Фахівцям</a>
+                    </li>
+                </ul>
+
+                <div class="social-bar">
+                    <a href="#" class="social-bar__item">INSTAGRAM</a>
+                    <a href="#" class="social-bar__item">FAcebook</a>
+                </div>
+
+            </div>
+            <div class="footer_bottom">
+                <a href="#" class="footer__link">Політика конфіденційності</a>
+                <div class="copyright">© 2022. Всі права захищені. Використання будь-яких матеріалів, що знаходяться на
+                    сайті, дозволяється за умови розміщення гіперпосилання.
+                </div>
+            </div>
+        </div>
+
+        <div class="disclaimer frosted">
+            <picture>
+                <source srcset="assets/img/disclaimer-mob.svg" media="(max-width: 600px)">
+                <img src="assets/img/disclaimer.svg" alt="Самолікування може бути шкідливим для вашого здоров'я">
+            </picture>
+        </div>
+        <div class="bg-white"></div>
+    </footer>
+
+    -----------------------------------------------------------------------------------------------
+    <div class="separator"></div>
+    ---------------------------------------------------------------------------------------
+    <h2 class="heading ">Чи можливо народжувати<br>
+        <span class="decor-bg">без болю?</span>
+    </h2>
+    <h2 class="heading text_blue"></h2>
+    -----------------------------------------------------------------------------------------------
+    <div class="separator">breadcrumb</div>
+    --------------------------------------------------------------------------------------------
+    <div class="container-full">
+        <nav aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li class="breadcrumb__item"><a href="index.html">Головна</a></li>
+                <li class="breadcrumb__item"><a href="#">Ліцей</a></li>
+                <li class="breadcrumb__item"><a href="#">Проєктна діяльність</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Політика конфіденційності</li>
+            </ul>
+        </nav>
+
+
+    </div>
+    -----------------------------------------------------------------------------------------------
+    <div class="separator">accordion</div>
+    --------------------------------------------------------------------------------------------
+
+    <div class="container">
+        <div class="accordion" id="accordion">
+            <div class="panel">
+                <div class="panel__heading">
+                    <div class="open-panel">
+
+                    </div>
+                    <h3 class="panel__title text_blue"><b class="text_uppercase">Міф:</b> Після епідуральної аналгезії я
+                        не
+                        відчуватиму
+                        перейми</h3>
+                </div>
+                <div class="panel-collapse">
+                    <div class="panel-collapse__body">
+                        <div class="answer"><b class="text_uppercase">Реальність:</b> Епідуральна аналгезія зменшує
+                            тільки больову чутливість
+                        </div>
+                        <div class="dynamic-content">
+                            <p>Досягнення в області епідурального введення ліків дозволили лікарям контролювати біль,
+                                не змушуючи вас почуватися слабкими. Ви, як і раніше, відчуватимете тиск від скорочень
+                                (з меншим
+                                болем або без болю).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel__heading">
+                    <div class="open-panel">
+
+                    </div>
+                    <h3 class="panel__title text_blue"><b class="text_uppercase">Міф:</b> Мамам, яким
+                        роблять епідуральну анестезію, частіше потрібний кесарів розтин</h3>
+                </div>
+                <div class="panel-collapse">
+                    <div class="panel-collapse__body">
+                        <div class="answer"><b class="text_uppercase">Реальність:</b> Епідуральна аналгезія зменшує
+                            тільки больову чутливість
+                        </div>
+                        <div class="dynamic-content">
+                            <p>Досягнення в області епідурального введення ліків дозволили лікарям контролювати біль,
+                                не змушуючи вас почуватися слабкими. Ви, як і раніше, відчуватимете тиск від скорочень
+                                (з меншим
+                                болем або без болю).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel__heading">
+                    <div class="open-panel">
+
+                    </div>
+                    <h3 class="panel__title text_blue"><b class="text_uppercase">Міф:</b> Епідуральна анестезія має бути
+                        виключно за медичними показами</h3>
+                </div>
+                <div class="panel-collapse">
+                    <div class="panel-collapse__body">
+                        <div class="answer"><b class="text_uppercase">Реальність:</b> Епідуральна аналгезія зменшує
+                            тільки больову чутливість
+                        </div>
+                        <div class="dynamic-content">
+                            <p>Досягнення в області епідурального введення ліків дозволили лікарям контролювати біль,
+                                не змушуючи вас почуватися слабкими. Ви, як і раніше, відчуватимете тиск від скорочень
+                                (з меншим
+                                болем або без болю).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel__heading">
+                    <div class="open-panel">
+
+                    </div>
+                    <h3 class="panel__title text_blue"><b class="text_uppercase">Міф:</b> Після епідуральної аналгезії я
+                        не зможу ходити</h3>
+                </div>
+                <div class="panel-collapse">
+                    <div class="panel-collapse__body">
+                        <div class="answer"><b class="text_uppercase">Реальність:</b> Епідуральна аналгезія зменшує
+                            тільки больову чутливість
+                        </div>
+                        <div class="dynamic-content">
+                            <p>Досягнення в області епідурального введення ліків дозволили лікарям контролювати біль,
+                                не змушуючи вас почуватися слабкими. Ви, як і раніше, відчуватимете тиск від скорочень
+                                (з меншим
+                                болем або без болю).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel__heading">
+                    <div class="open-panel">
+
+                    </div>
+                    <h3 class="panel__title text_blue"><b class="text_uppercase">Міф:</b> Жінка має народити сама з
+                        болем. Епідуральна аналгезія – це не фізіологічно, здорова жінка має народити сама</h3>
+                </div>
+                <div class="panel-collapse">
+                    <div class="panel-collapse__body">
+                        <div class="answer"><b class="text_uppercase">Реальність:</b> Епідуральна аналгезія зменшує
+                            тільки больову чутливість
+                        </div>
+                        <div class="dynamic-content">
+                            <p>Досягнення в області епідурального введення ліків дозволили лікарям контролювати біль,
+                                не змушуючи вас почуватися слабкими. Ви, як і раніше, відчуватимете тиск від скорочень
+                                (з меншим
+                                болем або без болю).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel__heading">
+                    <div class="open-panel">
+
+                    </div>
+                    <h3 class="panel__title text_blue"><b class="text_uppercase">Міф:</b> Епідуральна анестезія викликає
+                        тривалий біль у спині після пологів</h3>
+                </div>
+                <div class="panel-collapse">
+                    <div class="panel-collapse__body">
+                        <div class="answer"><b class="text_uppercase">Реальність:</b> Епідуральна аналгезія зменшує
+                            тільки больову чутливість
+                        </div>
+                        <div class="dynamic-content">
+                            <p>Досягнення в області епідурального введення ліків дозволили лікарям контролювати біль,
+                                не змушуючи вас почуватися слабкими. Ви, як і раніше, відчуватимете тиск від скорочень
+                                (з меншим
+                                болем або без болю).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel__heading">
+                    <div class="open-panel">
+
+                    </div>
+                    <h3 class="panel__title text_blue"><b class="text_uppercase">Міф:</b> Пологи займуть більше часу,
+                        якщо мені зроблять епідуральну анестезію</h3>
+                </div>
+                <div class="panel-collapse">
+                    <div class="panel-collapse__body">
+                        <div class="answer"><b class="text_uppercase">Реальність:</b> Епідуральна аналгезія зменшує
+                            тільки больову чутливість
+                        </div>
+                        <div class="dynamic-content">
+                            <p>Досягнення в області епідурального введення ліків дозволили лікарям контролювати біль,
+                                не змушуючи вас почуватися слабкими. Ви, як і раніше, відчуватимете тиск від скорочень
+                                (з меншим
+                                болем або без болю).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    -----------------------------------------------------------------------------------------------
+    <div class="separator">share</div>
+    --------------------------------------------------------------------------------------------
+    <div class="share">
+        <img src="assets/img/share.png" alt="">
+    </div>
+
+    -----------------------------------------------------------------------------------------------
+    <div class="separator">pagination</div>
+    --------------------------------------------------------------------------------------------
+
+    <div class="pagination">
+        <a href="#" class="pagination__prev">Попередня</a>
+        <a href="#" class="pagination__btn">1</a>
+        <a href="#" class="pagination__btn pagination__placeholder">...</a>
+        <a href="#" class="pagination__btn">10</a>
+        <a href="#" class="pagination__btn">11</a>
+        <a href="#" class="pagination__btn pagination__btn_active">12</a>
+        <a href="#" class="pagination__btn">13</a>
+        <a href="#" class="pagination__btn">14</a>
+        <a href="#" class="pagination__btn">15</a>
+        <a href="#" class="pagination__btn">16</a>
+        <a href="#" class="pagination__btn pagination__placeholder">...</a>
+        <a href="#" class="pagination__btn">26</a>
+        <a href="#" class="pagination__next">Наступна</a>
+    </div>
+    -----------------------------------------------------------------------------------------------
+    <div class="separator">related post</div>
+    --------------------------------------------------------------------------------------------
+
+    <!-- Swiper -->
+    <div class="container">
+        <div class="wrap-related-slider">
+            <div class="swiper related-post__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide related-post__slide">
+                        <a href="single.html" class="related-post__link">
+                            <article class="card-post">
+                                <div class="card-post__thumb"
+                                     style="background-image: url(assets/img/posts/thumb2.jpg);"></div>
+                                <h3 class="card-post__title">
+                                    Місце ропівакаїну у сучасній реґіонарній анестезії
+                                </h3>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="swiper-slide related-post__slide">
+                        <a href="single.html" class="related-post__link">
+                            <article class="card-post">
+                                <div class="card-post__thumb"
+                                     style="background-image: url(assets/img/posts/thumb3.jpg);"></div>
+                                <h3 class="card-post__title">
+                                    Анемія і хронічна серцева недостатність у реальній практиці лікаря
+                                </h3>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="swiper-slide related-post__slide">
+                        <a href="single.html" class="related-post__link">
+                            <article class="card-post">
+                                <div class="card-post__thumb"
+                                     style="background-image: url(assets/img/posts/thumb4.jpg);"></div>
+                                <h3 class="card-post__title">
+                                    Корекція дефіциту заліза у пацієнтів з ХСН: оновлення практичних рекомендацій
+                                </h3>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="swiper-slide related-post__slide">
+                        <a href="single.html" class="related-post__link">
+                            <article class="card-post">
+                                <div class="card-post__thumb"
+                                     style="background-image: url(assets/img/posts/thumb5.jpg);"></div>
+                                <h3 class="card-post__title">
+                                    Піперацилін/Тазобактам у сучасній клінічній практиці
+                                </h3>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="swiper-slide related-post__slide">
+                        <a href="single.html" class="related-post__link">
+                            <article class="card-post">
+                                <div class="card-post__thumb"
+                                     style="background-image: url(assets/img/posts/thumb6.jpg);"></div>
+                                <h3 class="card-post__title">
+                                    Ропістезія - сучасне знеболення физиологічних пологів
+                                </h3>
+                            </article>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next">
+                <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.66265 8.6313C6.71942 10.5745 4.0387 11.7803 1.07703 11.7803L1.07703 9.73169C5.86487 9.73169 9.76304 5.83352 9.76304 1.04568L11.8116 1.04568C11.8116 4.00735 10.6059 6.68807 8.66265 8.6313Z"
+                          fill="white"/>
+                    <path d="M20.4978 11.7807C17.6298 11.7807 14.9315 10.6627 12.9064 8.63756C10.8812 6.61239 9.76324 3.91411 9.76324 1.04608L11.8118 1.04608C11.8118 3.36391 12.7191 5.54712 14.3579 7.18599C15.9968 8.82486 18.18 9.73209 20.4978 9.73209L20.4978 11.7807Z"
+                          fill="white"/>
+                    <path d="M8.66265 19.8944C6.71942 21.8376 4.0387 23.0433 1.07703 23.0433L1.07703 20.9947C5.86487 20.9947 9.76304 17.0966 9.76304 12.3087L11.8116 12.3087C11.8116 15.2704 10.6059 17.9511 8.66265 19.8944Z"
+                          fill="white"/>
+                    <path d="M20.4978 23.0437C17.6298 23.0437 14.9315 21.9258 12.9064 19.9006C10.8812 17.8754 9.76324 15.1772 9.76324 12.3091L11.8118 12.3091C11.8118 14.627 12.7191 16.8102 14.3579 18.4491C15.9968 20.0879 18.18 20.9952 20.4978 20.9952L20.4978 23.0437Z"
+                          fill="white"/>
+                </svg>
+            </div>
+            <div class="swiper-button-prev">
+                <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.66265 8.6313C6.71942 10.5745 4.0387 11.7803 1.07703 11.7803L1.07703 9.73169C5.86487 9.73169 9.76304 5.83352 9.76304 1.04568L11.8116 1.04568C11.8116 4.00735 10.6059 6.68807 8.66265 8.6313Z"
+                          fill="white"/>
+                    <path d="M20.4978 11.7807C17.6298 11.7807 14.9315 10.6627 12.9064 8.63756C10.8812 6.61239 9.76324 3.91411 9.76324 1.04608L11.8118 1.04608C11.8118 3.36391 12.7191 5.54712 14.3579 7.18599C15.9968 8.82486 18.18 9.73209 20.4978 9.73209L20.4978 11.7807Z"
+                          fill="white"/>
+                    <path d="M8.66265 19.8944C6.71942 21.8376 4.0387 23.0433 1.07703 23.0433L1.07703 20.9947C5.86487 20.9947 9.76304 17.0966 9.76304 12.3087L11.8116 12.3087C11.8116 15.2704 10.6059 17.9511 8.66265 19.8944Z"
+                          fill="white"/>
+                    <path d="M20.4978 23.0437C17.6298 23.0437 14.9315 21.9258 12.9064 19.9006C10.8812 17.8754 9.76324 15.1772 9.76324 12.3091L11.8118 12.3091C11.8118 14.627 12.7191 16.8102 14.3579 18.4491C15.9968 20.0879 18.18 20.9952 20.4978 20.9952L20.4978 23.0437Z"
+                          fill="white"/>
+                </svg>
+            </div>
+
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+    -----------------------------------------------------------------------------------------------
+    <div class="separator"></div>
+    --------------------------------------------------------------------------------------------
+
+    <button class="btn-round btn-round_back"></button>
+    -----------------------------------------------------------------------------------------------
+    <div class="separator"></div>
+    --------------------------------------------------------------------------------------------
+    pagination
+    <br>
+
+    <div class="pagination">
+        <a href="#" class="pagination__prev">Попередня</a>
+        <a href="#" class="pagination__btn">1</a>
+        <a href="#" class="pagination__btn pagination__placeholder">...</a>
+        <a href="#" class="pagination__btn">10</a>
+        <a href="#" class="pagination__btn">11</a>
+        <a href="#" class="pagination__btn pagination__btn_active">12</a>
+        <a href="#" class="pagination__btn">13</a>
+        <a href="#" class="pagination__btn">14</a>
+        <a href="#" class="pagination__btn">15</a>
+        <a href="#" class="pagination__btn">16</a>
+        <a href="#" class="pagination__btn pagination__placeholder">...</a>
+        <a href="#" class="pagination__btn">26</a>
+        <a href="#" class="pagination__next">Наступна</a>
+    </div>
+
+
+    --------------------------------------------------------------------------------------------------------------------
+    <div class="separator"></div>
+    --------------------------------------------------------------------------------------------------------------------
+
+
+    -----------------------------------------------------------------------------------------------
+    <div class="separator"></div>
+    -----------------------------------------------------------------------------------------------
+
+
+    -----------------------------------------------------------------------------------------------
+    <div class="separator"></div>
+    --------------------------------------------------------------------------------------------
+
+    -----------------------------------------------------------------------------------------------
+    <div class="separator"></div>
+    --------------------------------------------------------------------------------------------
+
+
+    -----------------------------------------------------------------------------------------------
+    <div class="separator"></div>
+    --------------------------------------------------------------------------------------------
+
+
+    -----------------------------------------------------------------------------------------------
+    <div class="separator"></div>
+    --------------------------------------------------------------------------------------------
+
+    -----------------------------------------------------------------------------------------------
+    <div class="separator"></div>
+    --------------------------------------------------------------------------------------------
+
+
+    -----------------------------------------------------------------------------------------------
+    <div class="separator"></div>
+    --------------------------------------------------------------------------------------------
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="dist/main.js"></script>
+</div>
+
+</body>
+</html>

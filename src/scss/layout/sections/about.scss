@@ -1,0 +1,44 @@
+.about {
+  background: linear-gradient(180deg, #f5f7fa 17.99%, rgba(237, 239, 242, 0) 99.96%);
+  border-radius: 80px;
+  padding-top: 168px;
+  margin-top: -100px;
+
+  .heading {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .part {
+    &_left {
+      position: relative;
+      width: 40%;
+    }
+
+    &_right {
+      padding-top: 84px;
+      padding-left: 105px;
+      width: 60%;
+    }
+  }
+
+  .wrap-img {
+    position: absolute;
+    max-width: 534px;
+    width: 100vw;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 0 80px 0 80px;
+    overflow: hidden;
+  }
+
+  .section__img {
+    height: 100%;
+    max-width: initial;
+  }
+}

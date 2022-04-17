@@ -1,0 +1,43 @@
+.breadcrumb {
+  padding: 44px 0 84px;
+  font-size: 14px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+
+  &__item {
+    position: relative;
+    margin-right: 19px;
+
+    &.active {
+      font-weight: 700;
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      background-image: url(../assets/img/arrow-right.svg);
+      width: 6px;
+      height: 12px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:last-child:before {
+      display: none;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    display: inline-block;
+    padding-right: 25px;
+  }
+}

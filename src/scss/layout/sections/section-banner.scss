@@ -1,0 +1,15 @@
+.section-banner{
+  min-height: 1127px;
+  background: linear-gradient(283.67deg, #94cdf5 0%, #bddef6 41.15%, #e3f3ff 100%);
+  &__slogan{
+    font-size: 46px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #0078cd;
+  }
+  &.anim_started {
+    .text-reveal {
+      animation-delay: 2.5s;
+    }
+  }
+}
