@@ -12,7 +12,7 @@
   margin: 0 -12px;
 }
 
-.video__link {
+.video__wrap {
   display: block;
   width: 50%;
   padding: 0 12px;
@@ -24,23 +24,17 @@
     margin-bottom: 20px;
   }
 
-  &:hover,
-  &:focus {
-    .video__title {
-      color: #f16330;
-    }
-
-    .btn-round_play {
-      background-color: #f16330;
-    }
-  }
-
   .btn-round_play {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) rotate(-90deg);
     transition: background-color .35s;
+
+    &:hover,
+    &:focus {
+      background-color: #f16330;
+    }
   }
 }
 

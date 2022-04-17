@@ -4,6 +4,10 @@ body {
   background-color: #ffffff;
   color: #475056;
   font-feature-settings: 'pnum' on, 'lnum' on;
+  &.modal_open {
+    overflow: hidden;
+    height: 100%;
+  }
 }
 
 main:not(.home) {
@@ -52,6 +56,10 @@ main:not(.home) {
 
 .section {
   padding-bottom: 180px;
+}
+
+.modal-video-body{
+  max-width: 100%;
 }
 
 .dynamic-content {

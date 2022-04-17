@@ -35,6 +35,19 @@
     bottom: 0;
     border-radius: 0 80px 0 80px;
     overflow: hidden;
+    &:before{
+      position: absolute;
+      content: '';
+      display: block;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: transparent;
+      border-radius: 0 80px 0 80px;
+      border: 6px solid #f16330;
+      clip-path: polygon(0 53%, 0% 100%, 67% 100%);
+    }
   }
 
   .section__img {

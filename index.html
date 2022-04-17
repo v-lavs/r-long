@@ -19,18 +19,69 @@
 
 <body>
 <div class="wrapper">
+    <!--header-->
+    <header class="header">
+        <div class="container-full">
+            <button class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <a href="#" class="header__logo">
+                <img src="assets/img/logo-header.svg" alt="лого ЮРІЯ-ФАРМ">
+            </a>
 
+            <nav class="header__nav">
+                <button class="btn-close"></button>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#about_anesthesia" class="menu__link">Про знеболення пологів</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#video" class="menu__link">Відео-лекції</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="blog.html" class="menu__link">Фахівцям</a>
+                    </li>
+                </ul>
+
+                <div class="lang__toggle lang__toggle_mob">
+                    <a href="#" class="lang__link active">UA</a>
+                    <a href="#" class="lang__link">RU</a>
+                </div>
+            </nav>
+
+            <div class="lang__toggle lang__toggle_desk">
+                <a href="#" class="lang__link active">UA</a>
+                <a href="#" class="lang__link">RU</a>
+            </div>
+
+            <button type="button" class="search-open" id="openSearch">Пошук</button>
+
+            <div class="search-bar">
+                <form action="/" method="get" class="search-form">
+                    <div class="input-group">
+                        <button type="submit" class="search-btn"><span class="icon-search"></span>
+                        </button>
+                        <input type="text" name="s" class="form-control" placeholder="Пошук...">
+                        <button type="button" class="close-btn" id="closeSearch"></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
 
     <main class="main  home">
         <section class="section section-banner">
-            <div class="section-banner__slogan">
-                <div class="text-reveal"><span class="text-fw700">Ропістезія</span> - пологи без болю?</div>
-                <div class="text-reveal">Вибір тільки за тобою!</div>
+            <div class="container">
+                <div class="section-banner__slogan">
+                    <div class="text-reveal"><span class="text-fw700">Ропістезія</span> - пологи без болю?</div>
+                    <div class="text-reveal">Вибір тільки за тобою!</div>
+                </div>
             </div>
         </section>
 
-
-        <section class="section about">
+        <section id="about_anesthesia" class="section about">
             <div class="container">
                 <div class="part part_left">
                     <div class="wrap-img">
@@ -48,7 +99,8 @@
                             питанні зробила правильний вибір.</p>
                         <p>Правильний вибір — це те, що краще для мами і дитини.</p>
                         <p>Але як тільки вибір зроблений, залишається продумати з лікарем план народження малюка.
-                            Та все мінливе і з часом план може змінитися, тому що ваші пологи можуть супроводжуватися
+                            Та все мінливе і з часом план може змінитися, тому що ваші пологи можуть
+                            супроводжуватися
                             сильнішим або слабшим болем, ніж ви думали.</p>
                         <p>Свідомий підхід знеболення пологів — вибір сучасних мам.</p>
                     </div>
@@ -98,7 +150,8 @@
                                     </h3>
                                     <div class="card-type__text">
                                         Знеболюючі ліки, що вводяться через внутрішньовенний катетер або підшкірно.
-                                        Зазвичай лікарі будуть уникати використання цих ліків для уникнення ускладнень
+                                        Зазвичай лікарі будуть уникати використання цих ліків для уникнення
+                                        ускладнень
                                         з боку плоду та майбутньої мами.
                                     </div>
                                 </div>
@@ -175,7 +228,8 @@
                     </div>
                 </div>
                 <div class="part part_right">
-                    <h2 class="heading heading_md"><span class="text_orange"><b>Ропістезія</b></span> – сучасний метод
+                    <h2 class="heading heading_md"><span class="text_orange"><b>Ропістезія</b></span> – сучасний
+                        метод
                         епідурального знеболення пологів
                     </h2>
                     <div class="section__text dynamic-content">
@@ -220,42 +274,46 @@
                     <span class="decor-bg">процедура ропістезії?</span>
                 </h2>
                 <ul class="procedure__list">
-                    <li class="procedure__step">
+                    <li class="procedure__step slide-up">
                         <div class="card">
                             <div class="card__thumb"
                                  style="background-image: url(assets/img/procedure/step1.png);"></div>
                             <div class="card__body to-left">
                                 <div class="card__step">01</div>
-                                Вас попросять сісти і нахилитися вперед або лягти на бік, підтягнувши коліна до грудей.
+                                Вас попросять сісти і нахилитися вперед або лягти на бік, підтягнувши коліна до
+                                грудей.
                             </div>
                         </div>
                     </li>
-                    <li class="procedure__step">
+                    <li class="procedure__step slide-up">
                         <div class="card">
                             <div class="card__body">
                                 <div class="card__step">02</div>
-                                Попередньо шкіра знеболюється місцевим анестетиком для зменшення відчуттів при введенні
+                                Попередньо шкіра знеболюється місцевим анестетиком для зменшення відчуттів при
+                                введенні
                                 епідуральної голки.
                             </div>
                             <div class="card__thumb"
                                  style="background-image: url(assets/img/procedure/step2.png);"></div>
                         </div>
                     </li>
-                    <li class="procedure__step">
+                    <li class="procedure__step slide-up">
                         <div class="card">
                             <div class="card__thumb"
                                  style="background-image: url(assets/img/procedure/step3.png);"></div>
                             <div class="card__body to-left">
                                 <div class="card__step">03</div>
-                                Вас попросять сісти і нахилитися вперед або лягти на бік, підтягнувши коліна до грудей.
+                                Вас попросять сісти і нахилитися вперед або лягти на бік, підтягнувши коліна до
+                                грудей.
                             </div>
                         </div>
                     </li>
-                    <li class="procedure__step">
+                    <li class="procedure__step slide-up">
                         <div class="card">
                             <div class="card__body">
                                 <div class="card__step">04</div>
-                                Попередньо шкіра знеболюється місцевим анестетиком для зменшення відчуттів при введенні
+                                Попередньо шкіра знеболюється місцевим анестетиком для зменшення відчуттів при
+                                введенні
                                 епідуральної голки.
                             </div>
                             <div class="card__thumb"
@@ -346,7 +404,8 @@
                                     тільки больову чутливість
                                 </div>
                                 <div class="dynamic-content">
-                                    <p>Досягнення в області епідурального введення ліків дозволили лікарям контролювати
+                                    <p>Досягнення в області епідурального введення
+                                        ліків дозволили лікарям контролювати
                                         біль,
                                         не змушуючи вас почуватися слабкими. Ви, як і раніше, відчуватимете тиск від
                                         скорочень
@@ -372,7 +431,8 @@
                                     тільки больову чутливість
                                 </div>
                                 <div class="dynamic-content">
-                                    <p>Досягнення в області епідурального введення ліків дозволили лікарям контролювати
+                                    <p>Досягнення в області епідурального введення
+                                        ліків дозволили лікарям контролювати
                                         біль,
                                         не змушуючи вас почуватися слабкими. Ви, як і раніше, відчуватимете тиск від
                                         скорочень
@@ -389,7 +449,8 @@
                             <div class="open-panel">
 
                             </div>
-                            <h3 class="panel__title text_blue"><b class="text_uppercase">Міф:</b> Епідуральна анестезія
+                            <h3 class="panel__title text_blue"><b class="text_uppercase">Міф:</b>
+                                Епідуральна анестезія
                                 має бути
                                 виключно за медичними показами</h3>
                         </div>
@@ -400,7 +461,8 @@
                                     тільки больову чутливість
                                 </div>
                                 <div class="dynamic-content">
-                                    <p>Досягнення в області епідурального введення ліків дозволили лікарям контролювати
+                                    <p>Досягнення в області епідурального введення
+                                        ліків дозволили лікарям контролювати
                                         біль,
                                         не змушуючи вас почуватися слабкими. Ви, як і раніше, відчуватимете тиск від
                                         скорочень
@@ -427,7 +489,8 @@
                                     тільки больову чутливість
                                 </div>
                                 <div class="dynamic-content">
-                                    <p>Досягнення в області епідурального введення ліків дозволили лікарям контролювати
+                                    <p>Досягнення в області епідурального введення
+                                        ліків дозволили лікарям контролювати
                                         біль,
                                         не змушуючи вас почуватися слабкими. Ви, як і раніше, відчуватимете тиск від
                                         скорочень
@@ -446,7 +509,8 @@
                             </div>
                             <h3 class="panel__title text_blue"><b class="text_uppercase">Міф:</b> Жінка має народити
                                 сама з
-                                болем. Епідуральна аналгезія – це не фізіологічно, здорова жінка має народити сама</h3>
+                                болем. Епідуральна аналгезія – це не фізіологічно, здорова жінка має народити сама
+                            </h3>
                         </div>
                         <div class="panel-collapse">
                             <div class="panel-collapse__body">
@@ -455,7 +519,8 @@
                                     тільки больову чутливість
                                 </div>
                                 <div class="dynamic-content">
-                                    <p>Досягнення в області епідурального введення ліків дозволили лікарям контролювати
+                                    <p>Досягнення в області епідурального введення
+                                        ліків дозволили лікарям контролювати
                                         біль,
                                         не змушуючи вас почуватися слабкими. Ви, як і раніше, відчуватимете тиск від
                                         скорочень
@@ -471,7 +536,8 @@
                             <div class="open-panel">
 
                             </div>
-                            <h3 class="panel__title text_blue"><b class="text_uppercase">Міф:</b> Епідуральна анестезія
+                            <h3 class="panel__title text_blue"><b class="text_uppercase">Міф:</b>
+                                Епідуральна анестезія
                                 викликає
                                 тривалий біль у спині після пологів</h3>
                         </div>
@@ -482,7 +548,8 @@
                                     тільки больову чутливість
                                 </div>
                                 <div class="dynamic-content">
-                                    <p>Досягнення в області епідурального введення ліків дозволили лікарям контролювати
+                                    <p>Досягнення в області епідурального введення
+                                        ліків дозволили лікарям контролювати
                                         біль,
                                         не змушуючи вас почуватися слабкими. Ви, як і раніше, відчуватимете тиск від
                                         скорочень
@@ -499,7 +566,8 @@
                             <div class="open-panel">
 
                             </div>
-                            <h3 class="panel__title text_blue"><b class="text_uppercase">Міф:</b> Пологи займуть більше
+                            <h3 class="panel__title text_blue"><b class="text_uppercase">Міф:</b> Пологи займуть
+                                більше
                                 часу,
                                 якщо мені зроблять епідуральну анестезію</h3>
                         </div>
@@ -510,7 +578,8 @@
                                     тільки больову чутливість
                                 </div>
                                 <div class="dynamic-content">
-                                    <p>Досягнення в області епідурального введення ліків дозволили лікарям контролювати
+                                    <p>Досягнення в області епідурального введення
+                                        ліків дозволили лікарям контролювати
                                         біль,
                                         не змушуючи вас почуватися слабкими. Ви, як і раніше, відчуватимете тиск від
                                         скорочень
@@ -524,28 +593,28 @@
                 </div>
             </div>
         </section>
-        <section class="section video-block">
+        <section id="video" class="section video-block">
             <div class="container">
                 <h2 class="heading text_blue">про що має знати жінка<br>
                     <span class="decor-bg">перед пологами?</span>
                 </h2>
 
                 <div class="video__list">
-                    <a href='' target="_blank" class="video__link" rel="group">
+                    <div class="video__wrap" rel="group">
                         <div class="wrap-img">
                             <img src="assets/img/video/poster1.jpg">
-                            <button class="btn-round btn-round_play"></button>
+                            <button class="js-modal-btn btn-round btn-round_play" data-video-id="LvjIUnp2kZc"></button>
                         </div>
                         <h4 class="video__title text_blue heading_sm">Що лежить в основі змін при менопаузі?</h4>
                         <div class="video__info">
                             <span class="video__info-item">Відеолекція</span>
                             <span class="video__info-item">02:30:52</span>
                         </div>
-                    </a>
-                    <a href='' target="_blank" class="video__link" rel="group">
+                    </div>
+                    <div class="video__wrap" rel="group">
                         <div class="wrap-img">
                             <img src="assets/img/video/poster2.jpg">
-                            <button class="btn-round btn-round_play"></button>
+                            <button class="js-modal-btn btn-round btn-round_play" data-video-id="mJf8Qz8IYNE"></button>
                         </div>
                         <h4 class="video__title text_blue heading_sm">Що лежить в основі змін при менопаузі?</h4>
                         <div class="video__info">
@@ -553,22 +622,22 @@
                             <span class="video__info-item">02:30:52</span>
                         </div>
 
-                    </a>
-                    <a href='' target="_blank" class="video__link" rel="group">
+                    </div>
+                    <div class="video__wrap" rel="group">
                         <div class="wrap-img">
                             <img src="assets/img/video/poster3.jpg">
-                            <button class="btn-round btn-round_play"></button>
+                            <button class="js-modal-btn btn-round btn-round_play" data-video-id="LvjIUnp2kZc"></button>
                         </div>
                         <h4 class="video__title text_blue heading_sm">Що лежить в основі змін при менопаузі?</h4>
                         <div class="video__info">
                             <span class="video__info-item">Відеолекція</span>
                             <span class="video__info-item">02:30:52</span>
                         </div>
-                    </a>
-                    <a href='' target="_blank" class="video__link" rel="group">
+                    </div>
+                    <div class="video__wrap" rel="group">
                         <div class="wrap-img">
                             <img src="assets/img/video/poster4.jpg">
-                            <button class="btn-round btn-round_play"></button>
+                            <button class="js-modal-btn btn-round btn-round_play" data-video-id="mJf8Qz8IYNE"></button>
                         </div>
                         <h4 class="video__title text_blue heading_sm">Що лежить в основі змін при менопаузі?</h4>
                         <div class="video__info">
@@ -576,14 +645,57 @@
                             <span class="video__info-item">02:30:52</span>
                         </div>
 
-                    </a>
+                    </div>
                 </div>
             </div>
         </section>
+
         <button id="btnBack" class="btn-round btn-round_back"></button>
     </main>
 
+    <!--footer-->
+    <footer class="footer">
+        <div class="container-full">
+            <div class="footer_top">
 
+                <a href="#" class="footer__logo">
+                    <img src="assets/img/logo-header.svg" alt="лого ЮРІЯ-ФАРМ">
+                </a>
+
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#about_anesthesia" class="menu__link">Про знеболення пологів</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#video" class="menu__link">Відео-лекції</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="blog.html" class="menu__link">Фахівцям</a>
+                    </li>
+                </ul>
+
+                <div class="social-bar">
+                    <a href="#" class="social-bar__item">INSTAGRAM</a>
+                    <a href="#" class="social-bar__item">FAcebook</a>
+                </div>
+
+            </div>
+            <div class="footer_bottom">
+                <a href="#" class="footer__link">Політика конфіденційності</a>
+                <div class="copyright">© 2022. Всі права захищені. Використання будь-яких матеріалів, що знаходяться на
+                    сайті, дозволяється за умови розміщення гіперпосилання.
+                </div>
+            </div>
+        </div>
+
+        <div class="disclaimer frosted">
+            <picture>
+                <source srcset="assets/img/disclaimer-mob.svg" media="(max-width: 600px)">
+                <img src="assets/img/disclaimer.svg" alt="Самолікування може бути шкідливим для вашого здоров'я">
+            </picture>
+        </div>
+        <div class="bg-white"></div>
+    </footer>
 </div>
 
 <script src="dist/main.js"></script>

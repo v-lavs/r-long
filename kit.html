@@ -42,10 +42,10 @@
                 <button class="btn-close"></button>
                 <ul class="menu">
                     <li class="menu__item">
-                        <a href="#about_anesthesia" class="menu__link">Про знеболення пологів</a>
+                        <a href="index.html#about_anesthesia" class="menu__link">Про знеболення пологів</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#video" class="menu__link">Відео-лекції</a>
+                        <a href="index.html#video" class="menu__link">Відео-лекції</a>
                     </li>
                     <li class="menu__item">
                         <a href="blog.html" class="menu__link">Фахівцям</a>
@@ -95,10 +95,10 @@
 
                 <ul class="menu">
                     <li class="menu__item">
-                        <a href="#about_anesthesia" class="menu__link">Про знеболення пологів</a>
+                        <a href="index.html#about_anesthesia" class="menu__link">Про знеболення пологів</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#video" class="menu__link">Відео-лекції</a>
+                        <a href="index.html#video" class="menu__link">Відео-лекції</a>
                     </li>
                     <li class="menu__item">
                         <a href="blog.html" class="menu__link">Фахівцям</a>
@@ -476,6 +476,42 @@
     --------------------------------------------------------------------------------------------------------------------
     <div class="separator"></div>
     --------------------------------------------------------------------------------------------------------------------
+
+    <div class="container">
+
+        <!-- Button trigger modal -->
+        <a href="#" class="video__link" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#videoModal">
+            Play Video 1 - autoplay
+        </a>
+             <a href="#" class="video__link" data-toggle="modal" data-src="https://www.youtube.com/embed/IP7uGKgJL8U" data-target="#videoModal">
+            Play Video 2
+        </a>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/A-twOC3W558" data-target="#myModal">
+            Play Video 3
+        </button>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <!-- 16:9 aspect ratio -->
+                        <div class="wrap-video  embed-responsive embed-responsive-16by9">
+                            <iframe class="video embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     -----------------------------------------------------------------------------------------------
