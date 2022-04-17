@@ -145,7 +145,7 @@ $(document).ready(function () {
 
     if ($('.types-anesthesia__slider').get(0)) {
 
-        const typesAnesthesiaSlider = new Swiper("types-anesthesia__slider", {
+        const typesAnesthesiaSlider = new Swiper(".types-anesthesia__slider", {
             freeMode:true,
             spaceBetween:20,
             speed: 3000,
@@ -159,12 +159,12 @@ $(document).ready(function () {
             direction:'horizontal',
 
             scrollbar: {
-                el: '.swiper-scrollbar',
+                el: '.wrap-slider .swiper-scrollbar',
                 draggable: true,
             },
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: ".wrap-slider .swiper-button-next",
+                prevEl: ".wrap-slider .swiper-button-prev",
             },
         });
     }
