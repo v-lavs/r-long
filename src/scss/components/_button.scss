@@ -2,12 +2,35 @@
   display: inline-block;
   cursor: pointer;
   text-align: center;
-  transition: .35s;
-  font-size: 18px;
   font-family: $main-font;
-  border-radius: 100px;
-  min-width: 289px;
-  padding: 25px 10px 26px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 22px 16px;
+  transition: .5s;
+
+  &_main {
+    background: #2395e8;
+    color: #ffffff;
+    &:hover,
+    &:focus {
+      color: #475056;
+      background: #f3f5f8;
+    }
+  }
+
+  &_light {
+    color: #475056;
+    background: #f3f5f8;
+
+    &:hover,
+    &:focus {
+      background: #2395e8;
+      color: #ffffff;
+    }
+  }
 }
 
 .search-btn,

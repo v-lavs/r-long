@@ -1129,7 +1129,7 @@ main:not(.home) {
 .text-reveal__word {
   display: block;
   position: relative;
-  transform: translateY(-120%);
+  transform: translateY(-100%);
   transition: 1s;
   line-height: 1;
   z-index: 1;
@@ -1173,12 +1173,36 @@ main:not(.home) {
   display: inline-block;
   cursor: pointer;
   text-align: center;
-  transition: .35s;
-  font-size: 18px;
   font-family: "Raleway", sans-serif;
-  border-radius: 100px;
-  min-width: 289px;
-  padding: 25px 10px 26px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 22px 16px;
+  transition: .5s;
+}
+
+.btn_main {
+  background: #2395e8;
+  color: #ffffff;
+}
+
+.btn_main:hover,
+.btn_main:focus {
+  color: #475056;
+  background: #f3f5f8;
+}
+
+.btn_light {
+  color: #475056;
+  background: #f3f5f8;
+}
+
+.btn_light:hover,
+.btn_light:focus {
+  background: #2395e8;
+  color: #ffffff;
 }
 
 .search-btn,
@@ -1873,25 +1897,15 @@ main:not(.home) {
   display: flex;
 }
 
-.filter-posts__item {
-  display: block;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1;
-  color: #475056;
-  text-transform: uppercase;
-  background: #f3f5f8;
-  border-radius: 10px;
-  padding: 22px 16px;
+.filter-posts .btn_light {
   margin-right: 20px;
-  transition: .5s;
 }
 
-.filter-posts__item:last-child {
+.filter-posts .btn_light:last-child {
   margin-right: 0;
 }
 
-.filter-posts__item.active {
+.filter-posts .btn_light.active {
   background: #2395e8;
   color: #ffffff;
 }
@@ -2353,7 +2367,7 @@ main:not(.home) {
   background-image: url(../assets/img/bg-section.png);
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: contain;
+  background-size: auto 100%;
   min-height: 1044px;
 }
 
@@ -2361,7 +2375,7 @@ main:not(.home) {
   background-image: url(../assets/img/bg-section2.png);
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto 100%;
   padding-top: 165px;
 }
 
@@ -2558,6 +2572,64 @@ main:not(.home) {
 
 .single .container-full {
   position: relative;
+}
+
+.page-404 {
+  padding-top: 0 !important;
+  background-image: url(../assets/img/bg404.png);
+  background-repeat: no-repeat;
+  background-position: 0 bottom;
+  background-size: auto 100%;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  min-height: 100vh;
+}
+
+.page-404 .container {
+  display: flex;
+  align-items: center;
+}
+
+.page-404 .heading {
+  text-align: left;
+  text-transform: none;
+  margin-bottom: 40px;
+}
+
+.page-404 .part {
+  width: 50%;
+}
+
+.page-404 .part_left {
+  position: relative;
+  padding-top: 66.75%;
+}
+
+.page-404 .wrap-thumb {
+  position: absolute;
+  display: flex;
+  width: 750px;
+  right: 78px;
+  top: 0;
+  bottom: 0;
+  padding-bottom: 92px;
+  padding-right: 66px;
+  background-image: url(../assets/img/bird.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-404 .number {
+  -webkit-text-stroke: 4px  #ffffff;
+  -webkit-text-fill-color: #0088EC;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  font-size: 330px;
+  font-weight: 700;
+  line-height: .7;
+  margin-top: auto;
+  margin-left: auto;
 }
 
 @media only screen and (max-width: 1480px) {

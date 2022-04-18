@@ -188,7 +188,6 @@ $(document).ready(function () {
     }
 
     //BUTTON BACK
-
     let btn = $('#btnBack');
 
     $(window).scroll(function() {
@@ -209,17 +208,6 @@ $(document).ready(function () {
     //POPUP VIDEO
    const modalVideo =  new ModalVideo('.js-modal-btn');
 
-    //MODAL
-    //
-    // $('.open-modal').on('click', function (e) {
-    //     e.preventDefault();
-    //     $('.backdrop, .popup').fadeIn(500);
-    // });
-    //
-    // $('.close-popup, .backdrop').on('click', function () {
-    //     $('.backdrop, .popup').fadeOut(500);
-    // });
-
 
 //    ANIMATION
     const sectionWaypoints = $('.slide-up').waypoint({
@@ -238,10 +226,5 @@ $(document).ready(function () {
         });
     }, 300);
 
-    // $(window).on('scroll', function(){
-    //     let wHeight = $(window).height() - 100;
-    //     let scrollTop = $(window).scrollTop() - 100;
-    //     $('.parallax').css('transform','translate3d(0px, -'+ (scrollTop-wHeight)  +'px , 0px)');
-    // });
 });
 

@@ -1,0 +1,52 @@
+.page-404{
+  padding-top: 0!important;
+  background-image: url(../assets/img/bg404.png);
+  background-repeat: no-repeat;
+  background-position: 0 bottom;
+  background-size: auto 100%;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  min-height: 100vh;
+  .container{
+    display: flex;
+    align-items: center;
+  }
+  .heading{
+    text-align: left;
+    text-transform: none;
+    margin-bottom: 40px;
+  }
+  .part{
+    width: 50%;
+    &_left{
+      position: relative;
+      padding-top: 66.75%;
+    }
+  }
+  .wrap-thumb{
+    position: absolute;
+    display: flex;
+    width: 750px;
+    //left: 0;
+    right: 78px;
+    top: 0;
+    bottom: 0;
+    padding-bottom: 92px;
+    padding-right: 66px;
+    background-image: url(../assets/img/bird.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .number{
+    -webkit-text-stroke: 4px  #ffffff;
+    -webkit-text-fill-color:  #0088EC;
+      text-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    font-size: 330px;
+    font-weight: 700;
+    line-height: .7;
+    margin-top: auto;
+    margin-left: auto;
+  }
+}
