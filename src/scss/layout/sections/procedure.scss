@@ -13,29 +13,8 @@
     margin-bottom: 86px;
   }
 
-  &__info {
-    position: relative;
+  .block-info {
     max-width: 938px;
-    background: #f16330;
-    color: #ffffff;
-    border-radius: 10px;
-    padding: 15px 30px 15px 74px;
-    margin: 0 auto;
-
-    &:before {
-      position: absolute;
-      content: '';
-      display: block;
-      width: 24px;
-      height: 24px;
-      background-image: url(../assets/img/info.svg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      left: 30px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
   }
 
   &__list {

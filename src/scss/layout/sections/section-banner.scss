@@ -1,8 +1,12 @@
 .section-banner{
+  position: relative;
   display: flex;
   align-items: center;
-  min-height: 1127px;
+  min-height: 1020px;
   background: linear-gradient(283.67deg, #94cdf5 0%, #bddef6 41.15%, #e3f3ff 100%);
+  .container{
+    padding-bottom: 66px;
+  }
   &__slogan{
     font-size: 46px;
     line-height: 1.2;
@@ -13,5 +17,13 @@
     .text-reveal {
       animation-delay: 2.5s;
     }
+  }
+  &__img{
+    position: absolute;
+    right: 0;
+    max-width: 980px;
+    width: 100%;
+    top: 0;
+    bottom: 0;
   }
 }

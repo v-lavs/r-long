@@ -20,7 +20,58 @@
 <body>
 <div class="wrapper">
     <!--header-->
-    <!--header-->
+    <header class="header">
+        <div class="container-full">
+            <button class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <a href="#" class="header__logo">
+                <img src="assets/img/logo-header.svg" alt="лого ЮРІЯ-ФАРМ">
+            </a>
+
+            <nav class="header__nav">
+                <button class="btn-close"></button>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="index.html#about_anesthesia" class="menu__link">Про знеболення пологів</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="index.html#video" class="menu__link">Відео-лекції</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="blog.html" class="menu__link">Фахівцям</a>
+                    </li>
+                </ul>
+
+                <div class="lang__toggle lang__toggle_mob">
+                    <a href="#" class="lang__link active">UA</a>
+                    <a href="#" class="lang__link">RU</a>
+                </div>
+            </nav>
+
+            <div class="lang__toggle lang__toggle_desk">
+                <a href="#" class="lang__link active">UA</a>
+                <a href="#" class="lang__link">RU</a>
+            </div>
+
+            <button type="button" class="search-open" id="openSearch">Пошук</button>
+
+            <div class="search-bar">
+                <form action="/" method="get" class="search-form">
+                    <div class="input-group">
+                        <button type="submit" class="search-btn"><span class="icon-search"></span>
+                        </button>
+                        <input type="text" name="s" class="form-control" placeholder="Пошук...">
+                        <button type="button" class="close-btn" id="closeSearch"></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="backdrop"></div>
+
     <main class="main page">
         <div class="card-author">
             <div class="container">
@@ -221,6 +272,48 @@
         <button id="btnBack" class="btn-round btn-round_back"></button>
     </main>
     <!--footer-->
+    <footer class="footer">
+        <div class="container-full">
+            <div class="footer_top">
+
+                <a href="#" class="footer__logo">
+                    <img src="assets/img/logo-header.svg" alt="лого ЮРІЯ-ФАРМ">
+                </a>
+
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="index.html#about_anesthesia" class="menu__link">Про знеболення пологів</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="index.html#video" class="menu__link">Відео-лекції</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="blog.html" class="menu__link">Фахівцям</a>
+                    </li>
+                </ul>
+
+                <div class="social-bar">
+                    <a href="#" class="social-bar__item">INSTAGRAM</a>
+                    <a href="#" class="social-bar__item">FAcebook</a>
+                </div>
+
+            </div>
+            <div class="footer_bottom">
+                <a href="#" class="footer__link">Політика конфіденційності</a>
+                <div class="copyright">© 2022. Всі права захищені. Використання будь-яких матеріалів, що знаходяться на
+                    сайті, дозволяється за умови розміщення гіперпосилання.
+                </div>
+            </div>
+        </div>
+
+        <div class="disclaimer frosted">
+            <picture>
+                <source srcset="assets/img/disclaimer-mob.svg" media="(max-width: 600px)">
+                <img src="assets/img/disclaimer.svg" alt="Самолікування може бути шкідливим для вашого здоров'я">
+            </picture>
+        </div>
+        <div class="bg-white"></div>
+    </footer>
 </div>
 
 <script src="dist/main.js"></script>
