@@ -64,14 +64,14 @@ $(document).ready(function () {
 
 //    HEADER SCROLL
     $(function() {
-        const header = $(".header");
+        const header = $(".header .container-full");
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
 
             if (scroll >= 100) {
-                header.addClass('frosted');
+                header.addClass('decor');
             } else {
-                header.removeClass('frosted');
+                header.removeClass('decor');
             }
         });
     });

@@ -1428,7 +1428,6 @@ main:not(.home) {
   position: relative;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1;
   text-transform: uppercase;
   color: #0078cd;
   background-color: transparent;
@@ -1451,13 +1450,14 @@ main:not(.home) {
 }
 
 .search-bar {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
+  line-height: 1;
   transform: translateY(-100%);
   background-color: #ffffff;
-  padding: 40px 100px;
+  padding: 44px 100px;
   border-radius: 0 0 40px 40px;
   transition: .5s;
 }
@@ -1746,7 +1746,8 @@ main:not(.home) {
   z-index: 1000;
 }
 
-.header .container_inner {
+.header .container-full {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1761,6 +1762,19 @@ main:not(.home) {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.decor:before {
+  position: absolute;
+  content: '';
+  display: block;
+  left: 0;
+  right: 0;
+  top: -36px;
+  bottom: -36px;
+  z-index: -1;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
 }
 
 .lang__toggle {

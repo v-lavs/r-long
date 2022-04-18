@@ -29,17 +29,18 @@
     --------------------------------------------------------------------------------------------
     <header class="header">
         <div class="container-full">
-            <div class="container_inner">
-                <button class="burger">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </button>
-                <a href="#" class="header__logo">
-                    <img src="assets/img/logo-header.svg" alt="лого ЮРІЯ-ФАРМ">
-                </a>
 
-                <nav class="header__nav">
+            <button class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <a href="#" class="header__logo">
+                <img src="assets/img/logo-header.svg" alt="лого ЮРІЯ-ФАРМ">
+            </a>
+
+            <nav class="header__nav">
+                <div class="header__nav-inner">
                     <button class="btn-close"></button>
                     <ul class="menu">
                         <li class="menu__item">
@@ -57,29 +58,29 @@
                         <a href="#" class="lang__link active">UA</a>
                         <a href="#" class="lang__link">RU</a>
                     </div>
-                </nav>
-
-                <div class="lang__toggle lang__toggle_desk">
-                    <a href="#" class="lang__link active">UA</a>
-                    <a href="#" class="lang__link">RU</a>
                 </div>
+            </nav>
 
-                <button type="button" class="search-open" id="openSearch">Пошук</button>
-
-                <div class="search-bar">
-                    <form action="/" method="get" class="search-form">
-                        <div class="input-group">
-                            <button type="submit" class="search-btn"><span class="icon-search"></span>
-                            </button>
-                            <input type="text" name="s" class="form-control" placeholder="Пошук...">
-                            <button type="button" class="close-btn" id="closeSearch"></button>
-                        </div>
-                    </form>
-                </div>
+            <div class="lang__toggle lang__toggle_desk">
+                <a href="#" class="lang__link active">UA</a>
+                <a href="#" class="lang__link">RU</a>
             </div>
+
+            <button type="button" class="search-open" id="openSearch">Пошук</button>
+
+            <div class="search-bar">
+                <form action="/" method="get" class="search-form">
+                    <div class="input-group">
+                        <button type="submit" class="search-btn"><span class="icon-search"></span>
+                        </button>
+                        <input type="text" name="s" class="form-control" placeholder="Пошук...">
+                        <button type="button" class="close-btn" id="closeSearch"></button>
+                    </div>
+                </form>
+            </div>
+
         </div>
     </header>
-
     <div class="backdrop"></div>
 
 
@@ -482,15 +483,18 @@
     <div class="container">
 
         <!-- Button trigger modal -->
-        <a href="#" class="video__link" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#videoModal">
+        <a href="#" class="video__link" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk"
+           data-target="#videoModal">
             Play Video 1 - autoplay
         </a>
-             <a href="#" class="video__link" data-toggle="modal" data-src="https://www.youtube.com/embed/IP7uGKgJL8U" data-target="#videoModal">
+        <a href="#" class="video__link" data-toggle="modal" data-src="https://www.youtube.com/embed/IP7uGKgJL8U"
+           data-target="#videoModal">
             Play Video 2
         </a>
 
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/A-twOC3W558" data-target="#myModal">
+        <button type="button" class="btn btn-primary video-btn" data-toggle="modal"
+                data-src="https://www.youtube.com/embed/A-twOC3W558" data-target="#myModal">
             Play Video 3
         </button>
 
@@ -506,14 +510,14 @@
                         </button>
                         <!-- 16:9 aspect ratio -->
                         <div class="wrap-video  embed-responsive embed-responsive-16by9">
-                            <iframe class="video embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                            <iframe class="video embed-responsive-item" src="" id="video" allowscriptaccess="always"
+                                    allow="autoplay"></iframe>
                         </div>
-                   </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 
 
     -----------------------------------------------------------------------------------------------
