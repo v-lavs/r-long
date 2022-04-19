@@ -6,6 +6,10 @@
   padding-top: 86px;
   border-radius: 80px 80px 0 0;
 
+  .menu__item {
+    font-size: 20px;
+  }
+
   &__link {
     display: block;
     margin: 0 0 24px;
@@ -92,6 +96,66 @@
 
     &:first-child {
       margin-left: 0;
+    }
+  }
+}
+
+@include respond-to($xl) {
+  .footer {
+    .menu__item {
+      font-size: 18px;
+    }
+  }
+}
+
+@include respond-to($lg) {
+  .footer {
+    .menu {
+      padding: 0 10px;
+    }
+
+    .menu__item {
+      font-size: 17px;
+    }
+
+    .social-bar__item {
+      margin-left: 20px;
+    }
+
+    &_top {
+      align-items: baseline;
+    }
+  }
+}
+
+@include respond-to($md) {
+  .footer {
+    font-size: 14px;
+    &__link{
+      font-size: 14px;
+    }
+    &__logo{
+      margin-bottom: 55px;
+    }
+    &_top {
+      flex-direction: column;
+      align-items: center;
+    }
+    .menu{
+      margin-bottom: 50px;
+      &__item{
+        margin-bottom: 6px;
+      }
+    }
+    .social-bar{
+      display: flex;
+      justify-content: center;
+      &__item {
+        margin-left: 50px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
     }
   }
 }

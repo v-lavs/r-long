@@ -26,4 +26,25 @@
     font-weight: 700;
     margin-bottom: 20px;
   }
+
+}
+
+
+@include respond-to($xl){
+  .card-author{
+    &__avatar{
+      width: 185px;
+      height: 185px;
+    }
+    .part-right{
+      padding-top: 10px;
+    }
+  }
+}
+
+@include respond-to($md){
+  .card-author{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }

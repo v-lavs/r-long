@@ -101,6 +101,15 @@
 
 }
 
+@include respond-to($xl) {
+  .lang__toggle_desk{
+    display: none;
+  }
+  .lang__toggle_mob{
+    display: block;
+  }
+}
+
 @include respond-to($lg) {
 
   .burger {

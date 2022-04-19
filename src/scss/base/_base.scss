@@ -33,6 +33,9 @@ main:not(.home) {
 .text_uppercase {
   text-transform: uppercase;
 }
+.custom-cur{
+
+}
 
 .decor-bg {
   display: inline-block;
@@ -55,6 +58,20 @@ main:not(.home) {
 
 .section {
   padding-bottom: 180px;
+}
+
+.scroll-down{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 140px;
+  background-image: url(../assets/img/scroll-down.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 60px;
+  height: 82px;
+  z-index: 1;
 }
 
 .modal-video-body{
@@ -145,6 +162,14 @@ main:not(.home) {
 
 .article__content {
   color: #000000;
+}
+
+.share{
+  position: fixed;
+  left: 0;
+  top: 294px;
+  width: 47px;
+  height: 248px;
 }
 
 

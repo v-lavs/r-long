@@ -10,8 +10,8 @@
 // CUSTOM SCRIPTS
 
 
-
 $(document).ready(function () {
+
     //MOBILE MENU
     const nav = $('.header__nav');
 
@@ -30,11 +30,11 @@ $(document).ready(function () {
     // SMOOTH SCROLL TO ANCHOR
     function smoothScrollToAnchor(selector) {
         $(selector).on('click', function (event) {
-            let anchor = $.attr(this, 'href')
+            let anchor = $.attr(this, 'href');
+            let offsetSize = $("header").innerHeight();
 
             if (anchor.match(/^#/) && anchor !== '#') {
                 event.preventDefault()
-                let offsetSize = $("header").innerHeight();
                 $('html, body').animate({
                     scrollTop: $($.attr(this, 'href')).offset().top - offsetSize
                 }, 2000);
@@ -43,10 +43,17 @@ $(document).ready(function () {
                 $('body').removeClass('modal_open');
             }
         })
+        let myHash = location.hash;
+        location.hash = '';
+        let offsetSize = $("header").innerHeight();
+        if (myHash[1] != undefined) {
+            $('html, body').animate({scrollTop: $(myHash).offset().top - offsetSize}, 1500);
+        }
 
     }
 
-    smoothScrollToAnchor('.menu__link')
+    smoothScrollToAnchor('.menu__link');
+    smoothScrollToAnchor('.scroll-down');
 
     //  SEARCH-BAR
     const searchBar = $('.search-bar');
@@ -63,9 +70,9 @@ $(document).ready(function () {
 
 
 //    HEADER SCROLL
-    $(function() {
+    $(function () {
         const header = $(".header .container-full");
-        $(window).scroll(function() {
+        $(window).scroll(function () {
             var scroll = $(window).scrollTop();
 
             if (scroll >= 100) {
@@ -77,7 +84,7 @@ $(document).ready(function () {
     });
 
 
-//ACCORDION
+    //ACCORDION
     $('#accordion .panel__heading').on('click', function () {
         if ($(this).hasClass('open')) {
             $(this).removeClass('open');
@@ -104,6 +111,15 @@ $(document).ready(function () {
         }
     });
 
+    //FILTER
+
+    $('.filter-posts .btn_light').click(function (e) {
+        e.preventDefault();
+        $('.filter-posts .btn_light').removeClass('active');
+        $(this).addClass('active');
+
+    });
+
 
     // HOME BANNER ANIMATION
 
@@ -126,6 +142,7 @@ $(document).ready(function () {
             $(item).html(parsedWords);
         });
     }
+
     useTextRevealAnim();
 
     setTimeout(function () {
@@ -138,8 +155,8 @@ $(document).ready(function () {
     if ($('.related-post__slider').get(0)) {
 
         const relatedPostSlider = new Swiper(".related-post__slider", {
-           freeMode:true,
-            spaceBetween:20,
+            freeMode: true,
+            spaceBetween: 20,
             speed: 3000,
 
             slidesPerView: 'auto',
@@ -148,7 +165,7 @@ $(document).ready(function () {
             freeModeSticky: true,
             freeModeMinimumVelocity: 0.4,
             freeModeMomentumRatio: 0.28,
-            direction:'horizontal',
+            direction: 'horizontal',
 
             scrollbar: {
                 el: '.swiper-scrollbar',
@@ -164,8 +181,8 @@ $(document).ready(function () {
     if ($('.types-anesthesia__slider').get(0)) {
 
         const typesAnesthesiaSlider = new Swiper(".types-anesthesia__slider", {
-            freeMode:true,
-            spaceBetween:20,
+            freeMode: true,
+            spaceBetween: 20,
             speed: 3000,
 
             slidesPerView: 'auto',
@@ -174,7 +191,7 @@ $(document).ready(function () {
             freeModeSticky: true,
             freeModeMinimumVelocity: 0.4,
             freeModeMomentumRatio: 0.28,
-            direction:'horizontal',
+            direction: 'horizontal',
 
             scrollbar: {
                 el: '.wrap-slider .swiper-scrollbar',
@@ -190,7 +207,7 @@ $(document).ready(function () {
     //BUTTON BACK
     let btn = $('#btnBack');
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         if ($(window).scrollTop() > 500) {
             btn.addClass('show');
         } else {
@@ -198,15 +215,14 @@ $(document).ready(function () {
         }
     });
 
-    btn.on('click', function(e) {
+    btn.on('click', function (e) {
         e.preventDefault();
-        $('html, body').animate({scrollTop:0}, '300');
+        $('html, body').animate({scrollTop: 0}, '300');
     });
 
 
-
     //POPUP VIDEO
-   const modalVideo =  new ModalVideo('.js-modal-btn');
+    const modalVideo = new ModalVideo('.js-modal-btn');
 
 
 //    ANIMATION
