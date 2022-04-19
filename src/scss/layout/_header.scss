@@ -56,7 +56,7 @@
   top: -36px;
   bottom: -36px;
   z-index: -1;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(4px);
 }
 
@@ -102,16 +102,16 @@
 }
 
 @include respond-to($xl) {
+
+}
+
+@include respond-to($lg) {
   .lang__toggle_desk{
     display: none;
   }
   .lang__toggle_mob{
     display: block;
   }
-}
-
-@include respond-to($lg) {
-
   .burger {
     display: block !important;
   }

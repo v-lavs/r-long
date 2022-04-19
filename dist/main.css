@@ -1795,7 +1795,7 @@ main:not(.home) {
   top: -36px;
   bottom: -36px;
   z-index: -1;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(4px);
 }
 
@@ -1952,16 +1952,100 @@ main:not(.home) {
 }
 
 .section-banner.anim_started .text-reveal {
-  animation-delay: 2.5s;
+  animation-delay: 1.5s;
 }
 
-.section-banner__img {
+.section-banner.anim_started .vertebra__part:first-child {
+  opacity: .2;
+  transition-delay: 1.5s;
+}
+
+.section-banner.anim_started .vertebra__part:nth-child(2) {
+  opacity: .35;
+  transition-delay: 1.25s;
+}
+
+.section-banner.anim_started .vertebra__part:nth-child(3) {
+  opacity: .45;
+  transition-delay: 1.15s;
+}
+
+.section-banner.anim_started .vertebra__part:nth-child(4) {
+  opacity: .6;
+  transition-delay: 1.05s;
+}
+
+.section-banner.anim_started .vertebra__part:nth-child(5) {
+  opacity: 1;
+  transition-delay: .95s;
+}
+
+.section-banner.anim_started .vertebra__part:nth-child(6) {
+  opacity: 1;
+  transition-delay: .85s;
+}
+
+.section-banner.anim_started .vertebra__part:nth-child(7) {
+  opacity: 1;
+  transition-delay: .75s;
+}
+
+.section-banner.anim_started .vertebra__part:nth-child(8) {
+  opacity: 1;
+  transition-delay: .65s;
+}
+
+.section-banner.anim_started .vertebra__part:nth-child(9) {
+  opacity: .95;
+  transition-delay: .55s;
+}
+
+.section-banner.anim_started .vertebra__part:nth-child(10) {
+  opacity: .45;
+  transition-delay: .45s;
+}
+
+.section-banner.anim_started .vertebra__part:last-child {
+  opacity: .4;
+  transition-delay: .35s;
+}
+
+.section-banner__anim {
   position: absolute;
+  display: flex;
+  justify-content: flex-end;
   right: 0;
   max-width: 980px;
   width: 100%;
   top: 0;
   bottom: 0;
+}
+
+.section-banner__anim .wrap-img_back {
+  position: relative;
+  max-width: 743px;
+  width: 75%;
+}
+
+.section-banner .vertebra {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.section-banner .vertebra__part {
+  opacity: 0;
+  transition: opacity .8s;
+}
+
+.section-banner__img-anim {
+  position: absolute;
+  left: -5px;
+  bottom: 13%;
+  z-index: 2;
 }
 
 .section-blog__header {
@@ -2740,14 +2824,6 @@ main:not(.home) {
     max-width: 1080px;
   }
 
-  .lang__toggle_desk {
-    display: none;
-  }
-
-  .lang__toggle_mob {
-    display: block;
-  }
-
   .footer .menu__item {
     font-size: 18px;
   }
@@ -2769,6 +2845,14 @@ main:not(.home) {
 
   .container {
     max-width: 960px;
+  }
+
+  .lang__toggle_desk {
+    display: none;
+  }
+
+  .lang__toggle_mob {
+    display: block;
   }
 
   .burger {

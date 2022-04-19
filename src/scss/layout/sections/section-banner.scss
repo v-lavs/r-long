@@ -1,29 +1,116 @@
-.section-banner{
+.section-banner {
   position: relative;
   display: flex;
   align-items: center;
   min-height: 1020px;
   background: linear-gradient(283.67deg, #94cdf5 0%, #bddef6 41.15%, #e3f3ff 100%);
-  .container{
+
+  .container {
     padding-bottom: 66px;
   }
-  &__slogan{
+
+  &__slogan {
     font-size: 46px;
     line-height: 1.2;
     text-transform: uppercase;
     color: #0078cd;
   }
+
   &.anim_started {
     .text-reveal {
-      animation-delay: 2.5s;
+      animation-delay: 1.5s;
+    }
+
+    .vertebra__part:first-child {
+      opacity: .2;
+      transition-delay: 1.5s;
+    }
+
+    .vertebra__part:nth-child(2) {
+      opacity: .35;
+      transition-delay: 1.25s;
+    }
+    .vertebra__part:nth-child(3) {
+      opacity: .45;
+      transition-delay: 1.15s;
+    }
+    .vertebra__part:nth-child(4) {
+      opacity: .6;
+      transition-delay: 1.05s;
+    }
+    .vertebra__part:nth-child(5) {
+      opacity: 1;
+      transition-delay: .95s;
+    }
+
+    .vertebra__part:nth-child(6){
+      opacity: 1;
+      transition-delay: .85s;
+    }
+
+    .vertebra__part:nth-child(7){
+      opacity: 1;
+      transition-delay: .75s;
+    }
+
+    .vertebra__part:nth-child(8){
+      opacity: 1;
+      transition-delay: .65s;
+    }
+
+    .vertebra__part:nth-child(9) {
+      opacity: .95;
+      transition-delay: .55s;
+    }
+
+    .vertebra__part:nth-child(10){
+      opacity: .45;
+      transition-delay: .45s;
+    }
+
+    .vertebra__part:last-child {
+      opacity: .4;
+      transition-delay: .35s;
     }
   }
-  &__img{
+
+  &__anim {
     position: absolute;
+    display: flex;
+    justify-content: flex-end;
     right: 0;
     max-width: 980px;
     width: 100%;
     top: 0;
     bottom: 0;
+
+    .wrap-img_back {
+      position: relative;
+      max-width: 743px;
+      width: 75%;
+    }
+
+  }
+
+  .vertebra {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+
+    &__part {
+      opacity: 0;
+      transition: opacity .8s;
+    }
+  }
+
+  &__img-anim {
+    position: absolute;
+    left: -5px;
+    bottom: 13%;
+    z-index: 2;
   }
 }
+
