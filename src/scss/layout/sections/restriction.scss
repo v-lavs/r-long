@@ -50,11 +50,3 @@
     }
   }
 }
-@include respond-to($xxs) {
-  .restriction {
-    &__list-item {
-      width: 100%;
-      max-width: 228px;
-    }
-  }
-}

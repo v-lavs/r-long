@@ -2,7 +2,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 1020px;
   overflow: hidden;
   background: linear-gradient(283.67deg, #94cdf5 0%, #bddef6 41.15%, #e3f3ff 100%);
   opacity: 1;
@@ -15,16 +14,14 @@
     display: flex;
     align-items: center;
     padding-bottom: 66px;
-    min-height: 1020px;
+    min-height: 940px;
   }
 
   &__slogan {
-
     font-size: 46px;
     line-height: 1.2;
     text-transform: uppercase;
     color: #0078cd;
-
   }
 
   &.anim_started {
@@ -94,6 +91,7 @@
     top: 0;
     bottom: 0;
     z-index: 0;
+
     .wrap-img_back {
       position: relative;
       max-width: 743px;
@@ -144,36 +142,92 @@
 }
 
 
-@include respond-to($xl){
+@include respond-to($xl) {
   .section-banner {
     &__slogan {
-      font-size: 42px;
-      max-width: 636px;
+      max-width: 670px;
     }
-    &__anim{
+
+    &__anim {
       left: 40%;
+    }
+  }
+}
+
+@include respond-to($md) {
+  .section-banner {
+    .wrap-img_back {
+      display: none;
+    }
+
+    .container {
+      align-items: flex-end;
+      padding-bottom: 170px;
+    }
+
+    .scroll-down {
+      display: none;
+    }
+
+    .section-banner__slogan {
+      max-width: 100%;
+    }
+
+    .section-banner__anim {
+      left: 50vw;
+      top: 50%;
+      max-width: 100vw;
+      transform: translate(-50%, -50%);
+    }
+
+    .section-banner__img-anim {
+      max-width: 600px;
     }
   }
 }
 
 @include respond-to($sm) {
   .section-banner {
-    min-height: 780px;
-
     .container {
-      align-items: flex-end;
-      padding-bottom: 118px;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
     }
-
-    .img_back {
-      display: none;
+    .section-banner__slogan {
+      order: 2;
+    }
+    .section-banner__anim {
+      top: 0;
+      left: 0;
+      position: relative;
+      transform: none;
+      order: 1;
+    }
+    .section-banner__img-anim {
+      position: relative;
+      max-width: 90vw;
+      margin: 15% 0 -9%;
     }
   }
 }
 
 @include respond-to($xs) {
   .section-banner {
-
+    flex-direction: column;
+    .scroll-down {
+      position: relative;
+      left:auto;
+      margin: 0 auto;
+      display: block;
+      transform: none;
+    }
+    .section-banner__slogan,
+    .text-reveal__word-wrap {
+      line-height: 1;
+    }
+    .text-reveal .text-reveal__word {
+      font-size: 26px;
+      line-height: 1.2;
+    }
   }
 }
-

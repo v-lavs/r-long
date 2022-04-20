@@ -1731,8 +1731,8 @@ main:not(.home) {
 
 .container {
   width: 100%;
-  max-width: 1248px;
-  padding: 0 24px;
+  max-width: 1300px;
+  padding: 0 50px;
   margin: 0 auto;
 }
 
@@ -1942,7 +1942,6 @@ main:not(.home) {
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 1020px;
   overflow: hidden;
   background: linear-gradient(283.67deg, #94cdf5 0%, #bddef6 41.15%, #e3f3ff 100%);
   opacity: 1;
@@ -1956,7 +1955,7 @@ main:not(.home) {
   display: flex;
   align-items: center;
   padding-bottom: 66px;
-  min-height: 1020px;
+  min-height: 940px;
 }
 
 .section-banner__slogan {
@@ -3023,11 +3022,7 @@ main:not(.home) {
   margin-left: auto;
 }
 
-@media only screen and (max-width: 1439px) {
-  .text-reveal:last-child .text-reveal__word {
-    font-size: 44px;
-  }
-
+@media only screen and (max-width: 1440px) {
   .menu__item {
     font-size: 18px;
   }
@@ -3045,17 +3040,12 @@ main:not(.home) {
     padding-top: 10px;
   }
 
-  .container {
-    max-width: 1080px;
-  }
-
   .footer .menu__item {
     font-size: 18px;
   }
 
   .section-banner__slogan {
-    font-size: 42px;
-    max-width: 636px;
+    max-width: 670px;
   }
 
   .section-banner__anim {
@@ -3063,7 +3053,11 @@ main:not(.home) {
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1366px) {
+  .text-reveal:last-child .text-reveal__word {
+    font-size: 46px;
+  }
+
   .menu {
     flex-direction: column;
     padding: 60px 35px;
@@ -3081,10 +3075,6 @@ main:not(.home) {
 
   .search-open span {
     display: none;
-  }
-
-  .container {
-    max-width: 960px;
   }
 
   .lang__toggle_desk {
@@ -3142,7 +3132,7 @@ main:not(.home) {
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1200px) {
   .accordion .panel__heading {
     cursor: pointer;
   }
@@ -3153,7 +3143,7 @@ main:not(.home) {
   }
 
   .container {
-    max-width: 690px;
+    max-width: 840px;
   }
 
   .footer {
@@ -3201,6 +3191,34 @@ main:not(.home) {
     padding-right: 24px;
   }
 
+  .section-banner .wrap-img_back {
+    display: none;
+  }
+
+  .section-banner .container {
+    align-items: flex-end;
+    padding-bottom: 170px;
+  }
+
+  .section-banner .scroll-down {
+    display: none;
+  }
+
+  .section-banner .section-banner__slogan {
+    max-width: 100%;
+  }
+
+  .section-banner .section-banner__anim {
+    left: 50vw;
+    top: 50%;
+    max-width: 100vw;
+    transform: translate(-50%, -50%);
+  }
+
+  .section-banner .section-banner__img-anim {
+    max-width: 600px;
+  }
+
   .post {
     flex-direction: column;
   }
@@ -3216,7 +3234,7 @@ main:not(.home) {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 840px) {
   .accordion .panel {
     position: relative;
     padding: 40px 20px 100px;
@@ -3277,21 +3295,32 @@ main:not(.home) {
   }
 
   .container {
-    max-width: 100%;
-    padding: 0 50px;
-  }
-
-  .section-banner {
-    min-height: 780px;
+    max-width: 780px;
+    padding: 0 40px;
   }
 
   .section-banner .container {
-    align-items: flex-end;
-    padding-bottom: 118px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
   }
 
-  .section-banner .img_back {
-    display: none;
+  .section-banner .section-banner__slogan {
+    order: 2;
+  }
+
+  .section-banner .section-banner__anim {
+    top: 0;
+    left: 0;
+    position: relative;
+    transform: none;
+    order: 1;
+  }
+
+  .section-banner .section-banner__img-anim {
+    position: relative;
+    max-width: 90vw;
+    margin: 15% 0 -9%;
   }
 
   .assess-pain {
@@ -3450,6 +3479,7 @@ main:not(.home) {
   }
 
   .container {
+    max-width: 480px;
     padding: 0 24px;
   }
 
@@ -3469,6 +3499,28 @@ main:not(.home) {
 
   .footer {
     border-radius: 40px 40px 0 0;
+  }
+
+  .section-banner {
+    flex-direction: column;
+  }
+
+  .section-banner .scroll-down {
+    position: relative;
+    left: auto;
+    margin: 0 auto;
+    display: block;
+    transform: none;
+  }
+
+  .section-banner .section-banner__slogan,
+  .section-banner .text-reveal__word-wrap {
+    line-height: 1;
+  }
+
+  .section-banner .text-reveal .text-reveal__word {
+    font-size: 26px;
+    line-height: 1.2;
   }
 
   .section-blog__header {
@@ -3610,22 +3662,6 @@ main:not(.home) {
 
   .single .article .heading {
     margin-bottom: 15px;
-  }
-}
-
-@media only screen and (max-width: 420px) {
-  .pagination {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .restriction__list-item {
-    width: 100%;
-    max-width: 228px;
-  }
-
-  .advantages .heading {
-    margin-bottom: 19px;
   }
 }
 

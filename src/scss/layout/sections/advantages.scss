@@ -102,11 +102,3 @@
 
   }
 }
-
-@include respond-to($xxs) {
-  .advantages {
-    .heading {
-      margin-bottom: 19px;
-    }
-  }
-}

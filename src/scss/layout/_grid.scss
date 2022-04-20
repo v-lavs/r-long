@@ -1,25 +1,19 @@
 
 .container {
   width: 100%;
-  max-width: 1248px;
-  padding: 0 24px;
+  max-width: 1300px;
+  padding: 0 50px;
   margin: 0 auto;
 
-  @include respond-to($xl) {
-    max-width: 1080px;
-  }
-
-  @include respond-to($lg) {
-    max-width: 960px;
-  }
   @include respond-to($md) {
-    max-width: 690px;
+    max-width: 840px;
   }
   @include respond-to($sm) {
-    max-width: 100%;
-    padding: 0 50px;
+    max-width: 780px;
+    padding: 0 40px;
   }
   @include respond-to($xs) {
+    max-width: 480px;
     padding: 0 24px;
   }
 }
