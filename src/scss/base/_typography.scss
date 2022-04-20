@@ -15,6 +15,7 @@
   @include respond-to($xs) {
     font-size: 26px;
     line-height: 1.38;
+    text-align: center;
     &_sm{
       font-size: 22px;
     }

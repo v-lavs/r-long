@@ -8,6 +8,7 @@
   &__list {
     display: flex;
     margin: 0 -7px;
+    flex-wrap: wrap;
   }
 
   &__list-item {
@@ -34,5 +35,26 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+  }
+}
+
+@include respond-to($xs) {
+  .restriction {
+    &__list {
+      justify-content: center;
+    }
+
+    &__list-item {
+      width: 50%;
+      margin-bottom: 15px;
+    }
+  }
+}
+@include respond-to($xxs) {
+  .restriction {
+    &__list-item {
+      width: 100%;
+      max-width: 228px;
+    }
   }
 }

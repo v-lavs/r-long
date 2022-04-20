@@ -2250,6 +2250,7 @@ main:not(.home) {
 .restriction__list {
   display: flex;
   margin: 0 -7px;
+  flex-wrap: wrap;
 }
 
 .restriction__list-item {
@@ -3316,6 +3317,11 @@ main:not(.home) {
 
   .dynamic-content p {
     font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .dynamic-content p:last-child {
+    margin-bottom: 0;
   }
 
   .dynamic-content h1,
@@ -3338,6 +3344,7 @@ main:not(.home) {
   .heading {
     font-size: 26px;
     line-height: 1.38;
+    text-align: center;
   }
 
   .heading_sm {
@@ -3499,6 +3506,15 @@ main:not(.home) {
     padding-bottom: 25px;
   }
 
+  .restriction__list {
+    justify-content: center;
+  }
+
+  .restriction__list-item {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+
   .types-anesthesia__slide {
     padding-top: 120px;
   }
@@ -3540,6 +3556,11 @@ main:not(.home) {
   .pagination {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .restriction__list-item {
+    width: 100%;
+    max-width: 228px;
   }
 }
 
