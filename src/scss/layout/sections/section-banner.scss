@@ -18,7 +18,7 @@
 
   &.anim_started {
     .text-reveal {
-      animation-delay: 1.5s;
+      //transition-delay: 1.5s;
     }
 
     .vertebra__part:first-child {
@@ -30,30 +30,33 @@
       opacity: .35;
       transition-delay: 1.25s;
     }
+
     .vertebra__part:nth-child(3) {
       opacity: .45;
       transition-delay: 1.15s;
     }
+
     .vertebra__part:nth-child(4) {
       opacity: .6;
       transition-delay: 1.05s;
     }
+
     .vertebra__part:nth-child(5) {
       opacity: 1;
       transition-delay: .95s;
     }
 
-    .vertebra__part:nth-child(6){
+    .vertebra__part:nth-child(6) {
       opacity: 1;
       transition-delay: .85s;
     }
 
-    .vertebra__part:nth-child(7){
+    .vertebra__part:nth-child(7) {
       opacity: 1;
       transition-delay: .75s;
     }
 
-    .vertebra__part:nth-child(8){
+    .vertebra__part:nth-child(8) {
       opacity: 1;
       transition-delay: .65s;
     }
@@ -63,7 +66,7 @@
       transition-delay: .55s;
     }
 
-    .vertebra__part:nth-child(10){
+    .vertebra__part:nth-child(10) {
       opacity: .45;
       transition-delay: .45s;
     }
@@ -108,9 +111,36 @@
 
   &__img-anim {
     position: absolute;
-    left: -5px;
-    bottom: 13%;
     z-index: 2;
+    animation: animX 2s both  linear,
+    animY 2s both  linear;
+  }
+}
+
+
+@keyframes animX {
+  from {
+    left: -15%;
+  }
+  to {
+    left: -5px;
+  }
+}
+
+@keyframes animY {
+  from {
+    bottom: 3%;
+  }
+  to {
+    bottom: 13%;
+  }
+}
+
+@include respond-to($sm) {
+  .section-banner {
+    &__img-anim {
+      display: none;
+    }
   }
 }
 

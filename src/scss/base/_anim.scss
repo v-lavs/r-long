@@ -3,7 +3,6 @@
   overflow: hidden;
   display: block;
   opacity: 0;
-
   &:last-child {
     .text-reveal__word {
       padding: 15px 0;
@@ -49,7 +48,7 @@
   }
 }
 
-.anim_started {
+.anim_text {
   .text-reveal {
     opacity: 1;
   }
@@ -61,7 +60,7 @@
 }
 
 .fadeInUp {
-  transform: translateY(125px);
+  transform: translateY(-112px);
   opacity: 0;
 
   &.active_anim {

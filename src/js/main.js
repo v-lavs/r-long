@@ -149,6 +149,10 @@ $(document).ready(function () {
         $('.section-banner').addClass('anim_started');
         $('.header.fadeInUp').addClass('active_anim');
     }, 200);
+    setTimeout(function () {
+        $('.section-banner').addClass('anim_text');
+
+    }, 1800);
 
     //SLIDER
 
@@ -241,6 +245,35 @@ $(document).ready(function () {
             offset: '80%'
         });
     }, 300);
+
+
+//    EMOJI-RANGE SLIDER
+
+        const $rangeSlider = $('.range-slider');
+        const $rangeInput = $('.range-slider input');
+        const $rangeHandle = $('.range-slider .range-slider__handle');
+        const $trackPlaceholder = $('.range-slider .range-slider__track_bg');
+        const sliderVal  = Math.ceil($rangeInput.val()/10) || 0;
+        const valHolder = $rangeSlider.find('.range-slider__value');
+        const $emotions = $('.emotion-item');
+        const $valHolder = $(valHolder).html(sliderVal);
+
+        $rangeInput.on('input', (e) => {
+            const val = e.target.value;
+            const displayedVal = $rangeInput.val()/100;
+            const sliderVal  = Math.round(displayedVal) || 0;
+
+            const nextEl = $emotions.eq(Math.floor(displayedVal));
+
+            if(nextEl.length) {
+                $emotions.removeClass('active');
+                $emotions.eq(Math.floor(displayedVal)).addClass('active');
+            }
+
+            $trackPlaceholder.css({left: val /10 + '%'});
+            $rangeHandle.css({left: val / 10 + '%'});
+            $(valHolder).html(sliderVal);
+        });
 
 });
 
