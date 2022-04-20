@@ -1,16 +1,16 @@
 .burger {
   display: none;
-  width: 80px;
+  width: 24px;
+  height: 24px;
   background-color: transparent;
   border: none;
-  margin-left: 17px;
-
+  padding: 0;
   .line {
     display: block;
     width: 100%;
-    background-color: #999999;
-    height: 3px;
-    margin-bottom: 15px;
+    background-color: #2395e8;
+    height: 2px;
+    margin-bottom: 5px;
 
     &:last-child {
       margin-bottom: 0;
@@ -106,10 +106,10 @@
 }
 
 @include respond-to($lg) {
-  .lang__toggle_desk{
+  .lang__toggle_desk {
     display: none;
   }
-  .lang__toggle_mob{
+  .lang__toggle_mob {
     display: block;
   }
   .burger {
@@ -142,7 +142,13 @@
   }
 }
 
-
 @include respond-to($sm) {
+}
+
+@include respond-to($xs) {
+  .header {
+    padding-top: 44px;
+    padding-bottom: 26px;
+  }
 }
 

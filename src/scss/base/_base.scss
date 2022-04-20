@@ -4,9 +4,14 @@ body {
   background-color: #ffffff;
   color: #475056;
   font-feature-settings: 'pnum' on, 'lnum' on;
+
   &.modal_open {
     overflow: hidden;
     height: 100%;
+  }
+
+  @include respond-to($xs) {
+    font-size: 16px;
   }
 }
 
@@ -33,9 +38,6 @@ main:not(.home) {
 .text_uppercase {
   text-transform: uppercase;
 }
-.custom-cur{
-
-}
 
 .decor-bg {
   display: inline-block;
@@ -60,7 +62,7 @@ main:not(.home) {
   padding-bottom: 180px;
 }
 
-.scroll-down{
+.scroll-down {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -74,7 +76,7 @@ main:not(.home) {
   z-index: 1;
 }
 
-.modal-video-body{
+.modal-video-body {
   max-width: 100%;
 }
 
@@ -158,18 +160,36 @@ main:not(.home) {
       }
     }
   }
+
+  @include respond-to($xs) {
+    p {
+      font-size: 16px;
+    }
+    h1, h2 {
+      font-size: 26px;
+    }
+  }
 }
 
 .article__content {
   color: #000000;
 }
 
-.share{
+.share {
   position: fixed;
   left: 0;
   top: 294px;
   width: 47px;
   height: 248px;
+}
+
+@include respond-to($xs) {
+  main:not(.home){
+    padding-top: 120px;
+  }
+  .section {
+    padding-bottom: 80px;
+  }
 }
 
 

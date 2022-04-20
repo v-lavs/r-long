@@ -68,6 +68,9 @@
 }
 @include respond-to($lg) {
   .search-open{
+    width: 24px;
+    height: 24px;
+    padding: 0;
    span{
      display: none;
    }

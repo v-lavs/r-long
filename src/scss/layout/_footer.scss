@@ -130,6 +130,7 @@
 
 @include respond-to($md) {
   .footer {
+    padding-top: 120px;
     font-size: 14px;
     &__link{
       font-size: 14px;
@@ -157,5 +158,11 @@
         }
       }
     }
+  }
+}
+
+@include respond-to($xs){
+  .footer{
+    border-radius: 40px 40px 0 0;
   }
 }

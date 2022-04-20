@@ -10,3 +10,11 @@
     }
   }
 }
+
+@include respond-to($xs) {
+  .privacy-policy{
+    .section.article{
+      margin-bottom: 0;
+    }
+  }
+}

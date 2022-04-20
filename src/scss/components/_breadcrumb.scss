@@ -41,3 +41,9 @@
     padding-right: 25px;
   }
 }
+@include respond-to($xs){
+  .breadcrumb{
+    padding-top: 0;
+    padding-bottom: 46px;
+  }
+}
