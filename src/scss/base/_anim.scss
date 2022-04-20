@@ -60,12 +60,10 @@
 }
 
 .fadeInUp {
-  transform: translateY(-112px);
   opacity: 0;
 
   &.active_anim {
-    transition: transform .85s, opacity .8s;
-    transform: translateY(0);
+    transition: opacity .85s cubic-bezier(0, 0.57, 1, 1);
     opacity: 1
   }
 }

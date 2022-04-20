@@ -17,6 +17,7 @@ $(document).ready(function () {
     $('.burger').click(function (e) {
         e.preventDefault();
         nav.addClass('open');
+
         jQuery('.backdrop').fadeIn();
     });
 

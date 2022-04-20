@@ -1191,13 +1191,11 @@ main:not(.home) {
 }
 
 .fadeInUp {
-  transform: translateY(-112px);
   opacity: 0;
 }
 
 .fadeInUp.active_anim {
-  transition: transform .85s, opacity .8s;
-  transform: translateY(0);
+  transition: opacity 0.85s cubic-bezier(0, 0.57, 1, 1);
   opacity: 1;
 }
 
@@ -3325,6 +3323,37 @@ main:not(.home) {
     padding-bottom: 46px;
   }
 
+  .card-author {
+    border-radius: 40px;
+    padding: 70px 32px;
+  }
+
+  .card-author .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-author .part-right {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .card-author .activity {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .card-author__title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .card-author__avatar {
+    width: 92px;
+    height: 92px;
+  }
+
   .container {
     max-width: 420px;
   }
@@ -3354,7 +3383,7 @@ main:not(.home) {
 
   .post-author__info {
     font-size: 16px;
-    line-height: 2;
+    line-height: 1.7;
   }
 
   .post__info-item {

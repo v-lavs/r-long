@@ -1,27 +1,31 @@
-.card-author{
+.card-author {
   background: #f3f5f8;
   border-radius: 80px;
   padding: 118px 0;
   margin: 40px 0;
-  .container{
+
+  .container {
     display: flex;
   }
 
-  &__avatar{
+  &__avatar {
     width: 220px;
     height: 220px;
     flex-shrink: 0;
     border-radius: 50%;
     overflow: hidden;
   }
-  .part-right{
+
+  .part-right {
     padding-left: 40px;
     padding-top: 25px;
   }
-  &__title{
+
+  &__title {
     font-size: 36px;
   }
-  .activity{
+
+  .activity {
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -30,21 +34,55 @@
 }
 
 
-@include respond-to($xl){
-  .card-author{
-    &__avatar{
+@include respond-to($xl) {
+  .card-author {
+    &__avatar {
       width: 185px;
       height: 185px;
     }
-    .part-right{
+
+    .part-right {
       padding-top: 10px;
     }
   }
 }
 
-@include respond-to($md){
-  .card-author{
+@include respond-to($md) {
+  .card-author {
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+}
+
+@include respond-to($xs) {
+  .card-author {
+    border-radius: 40px;
+    padding: 70px 32px;
+
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .part-right {
+      width: 100%;
+      padding-left: 0;
+    }
+
+    .activity {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    &__title {
+      font-size: 26px;
+      text-align: center;
+    }
+
+    &__avatar {
+      width: 92px;
+      height: 92px;
+    }
   }
 }
