@@ -151,7 +151,7 @@ $(document).ready(function () {
     setTimeout(function () {
         $('.section-banner').addClass('anim_text');
 
-    }, 1800);
+    }, 1100);
 
     //SLIDER
 

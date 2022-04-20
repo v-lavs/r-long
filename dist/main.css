@@ -1891,6 +1891,7 @@ main:not(.home) {
   width: 100%;
   font-weight: 500;
   text-align: center;
+  color: #475056;
 }
 
 .footer .disclaimer {
@@ -3165,6 +3166,12 @@ main:not(.home) {
     margin-left: 0;
   }
 
+  .disclaimer {
+    padding-top: 7px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
   .post {
     flex-direction: column;
   }
@@ -3212,16 +3219,13 @@ main:not(.home) {
     font-size: 12px;
   }
 
-  .pagination__prev {
-    margin-right: 16px;
-  }
-
-  .pagination__next {
-    margin-left: 16px;
-  }
-
   .pagination__prev + .pagination__btn {
     display: flex;
+  }
+
+  .pagination__prev,
+  .pagination__next {
+    display: none;
   }
 
   .pagination__btn {
@@ -3235,16 +3239,12 @@ main:not(.home) {
     display: flex;
   }
 
-  .pagination__btn:first-child {
+  .pagination__btn_active + .pagination__btn {
     display: flex;
   }
 
   .pagination__btn:nth-last-child(2) {
     display: flex;
-  }
-
-  .pagination__btn + .pagination__btn + .pagination__placeholder {
-    display: none !important;
   }
 
   .container {
@@ -3285,6 +3285,12 @@ main:not(.home) {
   .heading {
     font-size: 26px;
     line-height: 1.38;
+  }
+
+  .btn {
+    font-size: 10px;
+    padding: 10px 16px 9px;
+    border-radius: 4px;
   }
 
   .btn-round {
@@ -3336,6 +3342,11 @@ main:not(.home) {
     border-radius: 40px 40px 0 0;
   }
 
+  .section-blog__header {
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+
   .post-author__avatar {
     width: 54px;
     height: 54px;
@@ -3349,6 +3360,14 @@ main:not(.home) {
   .post__info-item {
     font-size: 14px;
     margin-bottom: 0;
+  }
+
+  .post-list__item {
+    padding: 10px 0;
+  }
+
+  .page-count {
+    display: none;
   }
 
   .post__title {

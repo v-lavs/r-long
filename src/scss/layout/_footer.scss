@@ -57,6 +57,7 @@
     width: 100%;
     font-weight: 500;
     text-align: center;
+    color: #475056;
   }
 
   .disclaimer {
@@ -158,6 +159,11 @@
         }
       }
     }
+  }
+  .disclaimer{
+    padding-top: 7px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
