@@ -11,7 +11,6 @@
 
 
 $(document).ready(function () {
-
     //MOBILE MENU
     const nav = $('.header__nav');
 
@@ -248,32 +247,45 @@ $(document).ready(function () {
 
 
 //    EMOJI-RANGE SLIDER
+    const maxDimension = 1000;
+    const $rangeSlider = $('.range-slider');
+    const $rangeInput = $('.range-slider input');
+    $rangeInput.attr('max', maxDimension);
 
-        const $rangeSlider = $('.range-slider');
-        const $rangeInput = $('.range-slider input');
-        const $rangeHandle = $('.range-slider .range-slider__handle');
-        const $trackPlaceholder = $('.range-slider .range-slider__track_bg');
-        const sliderVal  = Math.ceil($rangeInput.val()/10) || 0;
-        const valHolder = $rangeSlider.find('.range-slider__value');
-        const $emotions = $('.emotion-item');
-        const $valHolder = $(valHolder).html(sliderVal);
+    const emotionLength = $('.range-slider .emotion-item').length;
+    const $rangeHandle = $('.range-slider .range-slider__handle');
+    const $rangeText = $('.range-slider .range-slider__label-text');
+    const $comments = $('.assess-pain .block-info__text');
+    const $trackPlaceholder = $('.range-slider .range-slider__track_bg');
+    const valHolder = $rangeSlider.find('.range-slider__value');
+    const $emotions = $('.emotion-item');
+    let prevHandleClass = $();
 
-        $rangeInput.on('input', (e) => {
-            const val = e.target.value;
-            const displayedVal = $rangeInput.val()/100;
-            const sliderVal  = Math.round(displayedVal) || 0;
+    $rangeInput.on('input', (e) => {
+        const val = e.target.value;
+        const displayedVal = Math.floor(val * (emotionLength - 1) / maxDimension) || 0;
+        const nextEl = $emotions.eq(displayedVal);
 
-            const nextEl = $emotions.eq(Math.floor(displayedVal));
+        if (nextEl.length) {
+            $emotions.removeClass('active');
+            $rangeText.removeClass('active');
+            $comments.removeClass('active');
 
-            if(nextEl.length) {
-                $emotions.removeClass('active');
-                $emotions.eq(Math.floor(displayedVal)).addClass('active');
-            }
+            nextEl.addClass('active');
 
-            $trackPlaceholder.css({left: val /10 + '%'});
-            $rangeHandle.css({left: val / 10 + '%'});
-            $(valHolder).html(sliderVal);
-        });
+            $rangeText.eq(displayedVal).addClass('active');
+            $comments.eq(displayedVal).addClass('active');
+
+            const handleModificator = 'range-slider__handle' + '_' + displayedVal;
+
+            $rangeHandle.removeClass(prevHandleClass).addClass(handleModificator);
+            prevHandleClass = handleModificator;
+        }
+
+        $trackPlaceholder.css({left: val / 10 + '%'});
+        $rangeHandle.css({left: val / 10 + '%'});
+        $(valHolder).html(displayedVal * 2);
+    });
 
 });
 
