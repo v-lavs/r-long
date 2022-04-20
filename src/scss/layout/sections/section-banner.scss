@@ -17,10 +17,6 @@
   }
 
   &.anim_started {
-    .text-reveal {
-      //transition-delay: 1.5s;
-    }
-
     .vertebra__part:first-child {
       opacity: .2;
       transition-delay: 1.5s;
@@ -135,12 +131,22 @@
     bottom: 13%;
   }
 }
-
 @include respond-to($sm) {
   .section-banner {
-    &__img-anim {
+    min-height: 780px;
+
+    .container{
+      align-items: flex-end;
+      padding-bottom: 118px;
+    }
+    .img_back{
       display: none;
     }
+  }
+}
+@include respond-to($xs) {
+  .section-banner {
+
   }
 }
 

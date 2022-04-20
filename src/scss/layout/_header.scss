@@ -5,6 +5,7 @@
   background-color: transparent;
   border: none;
   padding: 0;
+
   .line {
     display: block;
     width: 100%;
@@ -149,6 +150,11 @@
   .header {
     padding-top: 44px;
     padding-bottom: 26px;
+
+    .container-full:before {
+      top: -44px;
+      bottom: -28px;
+    }
   }
 }
 

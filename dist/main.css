@@ -938,7 +938,6 @@ a:hover {
 body {
   font: 400 22px/1.5 "Raleway", sans-serif;
   height: 100%;
-  background-color: #ffffff;
   color: #475056;
   font-feature-settings: 'pnum' on, 'lnum' on;
 }
@@ -2195,6 +2194,7 @@ main:not(.home) {
 
 .related-post__slider {
   width: calc(100% + (100vw - 100%) / 2);
+  overflow: visible;
 }
 
 .related-post__slide {
@@ -2410,6 +2410,7 @@ main:not(.home) {
   width: calc(100% + (100vw - 100%) / 2);
   padding-top: 30px;
   padding-bottom: 30px;
+  overflow: visible;
 }
 
 .types-anesthesia__slide {
@@ -3246,10 +3247,20 @@ main:not(.home) {
   }
 
   .container {
-    max-width: 580px;
+    max-width: 100%;
+    padding: 0 50px;
   }
 
-  .section-banner__img-anim {
+  .section-banner {
+    min-height: 780px;
+  }
+
+  .section-banner .container {
+    align-items: flex-end;
+    padding-bottom: 118px;
+  }
+
+  .section-banner .img_back {
     display: none;
   }
 }
@@ -3355,7 +3366,7 @@ main:not(.home) {
   }
 
   .container {
-    max-width: 420px;
+    padding: 0 24px;
   }
 
   .container-full {
@@ -3365,6 +3376,11 @@ main:not(.home) {
   .header {
     padding-top: 44px;
     padding-bottom: 26px;
+  }
+
+  .header .container-full:before {
+    top: -44px;
+    bottom: -28px;
   }
 
   .footer {
@@ -3452,10 +3468,6 @@ main:not(.home) {
   .pagination {
     padding-left: 0;
     padding-right: 0;
-  }
-
-  .container {
-    width: 100%;
   }
 }
 
