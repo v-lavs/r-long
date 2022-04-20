@@ -64,8 +64,10 @@
 
 @include respond-to($xs){
   .types-anesthesia{
+    padding-bottom: 80px;
     &__slide{
       padding-top: 120px;
+        max-width: 312px;
     }
   }
 }

@@ -10,13 +10,18 @@
       font-size: 52px;
       color: #F17548;
       z-index: 1;
-
-      @include respond-to($lg) {
-        font-size: 46px;
+      @include respond-to($xs) {
+        padding: 12px 0;
       }
-
       &:first-of-type{
         padding-left: 15px;
+        @include respond-to($lg) {
+          font-size: 46px;
+        }
+        @include respond-to($xs) {
+          font-size: 21px;
+          padding-left: 5px;
+        }
       }
 
       &:before {

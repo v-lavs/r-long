@@ -214,8 +214,13 @@
 @include respond-to($xs) {
   .section-banner {
     flex-direction: column;
+    .container{
+      min-height: 755px;
+    }
     .scroll-down {
       position: relative;
+      width: 40px;
+      height: 40px;
       left:auto;
       margin: 0 auto;
       display: block;

@@ -225,6 +225,42 @@
   }
 }
 
+@include respond-to($md) {
+  .assess-pain {
+
+  }
+  .range-slider {
+    input {
+      height: 50px;
+    }
+
+    &__label {
+      display: none;
+    }
+
+    &__handle {
+      box-shadow: 0 0 0 6px currentColor;
+      height: 51px;
+      width: 51px;
+    }
+
+    &__track {
+      height: 40px;
+    }
+
+  }
+  .emotion {
+    width: 90px;
+    height: 90px;
+
+
+    .emoticon__img {
+      max-width: 60px;
+      height: 60px;
+    }
+  }
+}
+
 @include respond-to($sm) {
   .assess-pain {
     padding-top: 80px;
@@ -235,19 +271,40 @@
       padding: 130px 30px 10px;
     }
   }
-  .emotion {
-    width: 70px;
-    height: 70px;
+}
 
-    .icon-down-em {
-      width: 12px;
-      height: 14px;
+@include respond-to($xs) {
+  .assess-pain {
+    .emoji-range {
+      padding-top: 100px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
+  .emotion {
+    width: 60px;
+    height: 60px;
+    top: -40px;
+
+    .icon-down-em {
+      width: 9px;
+      height: 11px;
+    }
+
+    .emoticon__img {
+      max-width: 40px;
+      height: 40px;
+    }
+  }
+
 
   .range-slider {
     input {
       height: 40px;
+    }
+
+    &__label {
+      display: none;
     }
 
     &__handle {
@@ -261,36 +318,6 @@
       height: 16px;
     }
 
-    &__label {
-      display: none;
-    }
-  }
-
-  .emoticon__img {
-    max-width: 50px;
-    height: 50px;
-  }
-}
-
-@include respond-to($xs) {
-  .assess-pain {
-    .emoji-range {
-      padding-top: 100px;
-    }
-  }
-  .emotion {
-    width: 60px;
-    height: 60px;
-    top: -40px;
-
-    .icon-down-em {
-      width: 9px;
-      height: 11px;
-    }
-  }
-  .emoticon__img {
-    max-width: 40px;
-    height: 40px;
   }
 }
 

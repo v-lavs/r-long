@@ -3054,7 +3054,29 @@ main:not(.home) {
 }
 
 @media only screen and (max-width: 1366px) {
-  .text-reveal:last-child .text-reveal__word {
+  body {
+    font-size: 18px;
+  }
+
+  .dynamic-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .dynamic-content p:last-child {
+    margin-bottom: 0;
+  }
+
+  .dynamic-content h1,
+  .dynamic-content h2 {
+    font-size: 32px;
+  }
+
+  .heading_md {
+    font-size: 26px;
+  }
+
+  .text-reveal:last-child .text-reveal__word:first-of-type {
     font-size: 46px;
   }
 
@@ -3133,6 +3155,14 @@ main:not(.home) {
 }
 
 @media only screen and (max-width: 1200px) {
+  .section {
+    padding-bottom: 150px;
+  }
+
+  .heading_sm {
+    font-size: 24px;
+  }
+
   .accordion .panel__heading {
     cursor: pointer;
   }
@@ -3244,8 +3274,8 @@ main:not(.home) {
 
   .about .wrap-img {
     position: relative;
-    max-width: 365px;
-    margin: 0 auto 30px;
+    max-width: 370px;
+    margin: 0 auto 46px;
   }
 
   .about .wrap-img img {
@@ -3253,9 +3283,49 @@ main:not(.home) {
     width: 100%;
     height: auto;
   }
+
+  .about {
+    border-radius: 40px 40px 0 0;
+  }
+
+  .about .wrap-img:before {
+    border-width: 10px;
+  }
+
+  .range-slider input {
+    height: 50px;
+  }
+
+  .range-slider__label {
+    display: none;
+  }
+
+  .range-slider__handle {
+    box-shadow: 0 0 0 6px currentColor;
+    height: 51px;
+    width: 51px;
+  }
+
+  .range-slider__track {
+    height: 40px;
+  }
+
+  .emotion {
+    width: 90px;
+    height: 90px;
+  }
+
+  .emotion .emoticon__img {
+    max-width: 60px;
+    height: 60px;
+  }
 }
 
 @media only screen and (max-width: 840px) {
+  .heading_sm {
+    font-size: 22px;
+  }
+
   .accordion .panel {
     position: relative;
     padding: 40px 20px 100px;
@@ -3353,40 +3423,6 @@ main:not(.home) {
   .assess-pain .emoji-range {
     padding: 130px 30px 10px;
   }
-
-  .emotion {
-    width: 70px;
-    height: 70px;
-  }
-
-  .emotion .icon-down-em {
-    width: 12px;
-    height: 14px;
-  }
-
-  .range-slider input {
-    height: 40px;
-  }
-
-  .range-slider__handle {
-    box-shadow: 0 0 0 4px currentColor;
-    height: 41px;
-    width: 41px;
-  }
-
-  .range-slider__track {
-    clip-path: polygon(99% 0%, 100% 50%, 99% 100%, 0 100%, 0 0%);
-    height: 16px;
-  }
-
-  .range-slider__label {
-    display: none;
-  }
-
-  .emoticon__img {
-    max-width: 50px;
-    height: 50px;
-  }
 }
 
 @media only screen and (max-width: 580px) {
@@ -3428,6 +3464,15 @@ main:not(.home) {
 
   .heading_sm {
     font-size: 22px;
+  }
+
+  .text-reveal:last-child .text-reveal__word {
+    padding: 12px 0;
+  }
+
+  .text-reveal:last-child .text-reveal__word:first-of-type {
+    font-size: 21px;
+    padding-left: 5px;
   }
 
   .btn {
@@ -3526,8 +3571,14 @@ main:not(.home) {
     flex-direction: column;
   }
 
+  .section-banner .container {
+    min-height: 755px;
+  }
+
   .section-banner .scroll-down {
     position: relative;
+    width: 40px;
+    height: 40px;
     left: auto;
     margin: 0 auto;
     display: block;
@@ -3617,12 +3668,19 @@ main:not(.home) {
     margin-bottom: 15px;
   }
 
+  .types-anesthesia {
+    padding-bottom: 80px;
+  }
+
   .types-anesthesia__slide {
     padding-top: 120px;
+    max-width: 312px;
   }
 
   .assess-pain .emoji-range {
     padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .emotion {
@@ -3636,9 +3694,28 @@ main:not(.home) {
     height: 11px;
   }
 
-  .emoticon__img {
+  .emotion .emoticon__img {
     max-width: 40px;
     height: 40px;
+  }
+
+  .range-slider input {
+    height: 40px;
+  }
+
+  .range-slider__label {
+    display: none;
+  }
+
+  .range-slider__handle {
+    box-shadow: 0 0 0 4px currentColor;
+    height: 41px;
+    width: 41px;
+  }
+
+  .range-slider__track {
+    clip-path: polygon(99% 0%, 100% 50%, 99% 100%, 0 100%, 0 0%);
+    height: 16px;
   }
 
   .advantages {

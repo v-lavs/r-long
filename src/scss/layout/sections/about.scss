@@ -71,13 +71,22 @@
 
     .wrap-img {
       position: relative;
-      max-width: 365px;
-      margin: 0 auto 30px;
+      max-width: 370px;
+      margin: 0 auto 46px;
       img {
         max-width: 100%;
         width: 100%;
         height: auto;
       }
+    }
+  }
+}
+
+@include respond-to($md) {
+  .about{
+    border-radius: 40px 40px 0 0;
+    .wrap-img:before{
+      border-width: 10px;
     }
   }
 }
