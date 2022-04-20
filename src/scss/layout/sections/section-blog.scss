@@ -101,10 +101,6 @@
     }
 
     &:nth-child(2):before {
-      background-image: url(../assets/img/clock.svg);
-    }
-
-    &:nth-child(3):before {
       background-image: url(../assets/img/eye.svg);
     }
   }
@@ -135,5 +131,22 @@
     &__thumb{
       padding-top: 64%;
     }
+  }
+}
+
+@include respond-to($xs){
+  .post-author__avatar{
+      width: 54px;
+      height: 54px;
+  }
+  .post-author__info{
+    font-size: 16px;
+    line-height: 2;
+  }
+   .post__info{
+   &-item{
+     font-size: 14px;
+     margin-bottom: 0;
+   }
   }
 }

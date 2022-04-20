@@ -2164,10 +2164,6 @@ main:not(.home) {
 }
 
 .post__info-item:nth-child(2):before {
-  background-image: url(../assets/img/clock.svg);
-}
-
-.post__info-item:nth-child(3):before {
   background-image: url(../assets/img/eye.svg);
 }
 
@@ -2191,6 +2187,11 @@ main:not(.home) {
 .related-post .heading {
   text-align: left;
   margin-bottom: 40px;
+}
+
+.related-post .post__info {
+  display: none;
+  margin-bottom: 0;
 }
 
 .related-post__slider {
@@ -3239,6 +3240,10 @@ input {
     line-height: 1.375;
   }
 
+  .breadcrumb {
+    font-size: 12px;
+  }
+
   .pagination__prev {
     margin-right: 16px;
   }
@@ -3297,8 +3302,12 @@ input {
     font-size: 26px;
   }
 
+  .share {
+    display: none;
+  }
+
   main:not(.home) {
-    padding-top: 120px;
+    padding-top: 95px;
   }
 
   .section {
@@ -3307,6 +3316,34 @@ input {
 
   .heading {
     font-size: 26px;
+    line-height: 1.38;
+  }
+
+  .btn-round {
+    width: 42px;
+    height: 42px;
+  }
+
+  .btn-round_back {
+    background-size: 16px 18px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 42px;
+    height: 42px;
+  }
+
+  .swiper-button-next svg,
+  .swiper-button-prev svg {
+    width: 13px;
+    height: 16px;
+  }
+
+  .swiper-scrollbar {
+    height: 6px;
+    width: 157px;
+    bottom: 18px;
   }
 
   .breadcrumb {
@@ -3318,6 +3355,10 @@ input {
     max-width: 420px;
   }
 
+  .container-full {
+    padding: 0 24px;
+  }
+
   .header {
     padding-top: 44px;
     padding-bottom: 26px;
@@ -3327,8 +3368,67 @@ input {
     border-radius: 40px 40px 0 0;
   }
 
-  .privacy-policy .section.article {
+  .post-author__avatar {
+    width: 54px;
+    height: 54px;
+  }
+
+  .post-author__info {
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  .post__info-item {
+    font-size: 14px;
     margin-bottom: 0;
+  }
+
+  .post__title {
+    font-size: 16px;
+  }
+
+  .post__text {
+    display: none;
+  }
+
+  .post__thumb {
+    margin-bottom: 20px;
+  }
+
+  .card-post__thumb {
+    min-height: 200px;
+  }
+
+  .card-post__title {
+    font-size: 16px;
+  }
+
+  .related-post .heading {
+    margin-bottom: 20px;
+  }
+
+  .related-post .post__info {
+    display: block;
+  }
+
+  .related-post__slide {
+    max-width: 312px;
+  }
+
+  .wrap-slider {
+    padding-bottom: 25px;
+  }
+
+  .section.article {
+    margin-bottom: 0;
+  }
+
+  .article {
+    margin-bottom: 40px;
+  }
+
+  .single .article .heading {
+    margin-bottom: 15px;
   }
 }
 

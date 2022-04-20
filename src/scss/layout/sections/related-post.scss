@@ -1,8 +1,14 @@
 .related-post {
   overflow: hidden;
+
   .heading {
     text-align: left;
     margin-bottom: 40px;
+  }
+
+  .post__info {
+    display: none;
+    margin-bottom: 0;
   }
 
   &__slider {
@@ -48,4 +54,42 @@
     line-height: 1.38;
     transition: .35s;
   }
+}
+
+@include respond-to($xs) {
+  .post__title {
+    font-size: 16px;
+  }
+  .post__text {
+    display: none;
+  }
+  .post__thumb {
+    margin-bottom: 20px;
+  }
+  .card-post {
+    &__thumb {
+      min-height: 200px;
+    }
+
+    &__title {
+      font-size: 16px;
+    }
+  }
+  .related-post {
+    .heading {
+      margin-bottom: 20px;
+    }
+
+    .post__info {
+      display: block;
+    }
+
+    &__slide {
+      max-width: 312px;
+    }
+  }
+  .wrap-slider {
+    padding-bottom: 25px;
+  }
+
 }

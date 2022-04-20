@@ -54,7 +54,26 @@
   background-color: #f3f5f8;
   border-radius: 100px;
 }
-.swiper-scrollbar-drag{
+
+.swiper-scrollbar-drag {
   background-color: #f16330;
+}
+
+@include respond-to($xs) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 42px;
+    height: 42px;
+
+    svg {
+      width: 13px;
+      height: 16px;
+    }
+  }
+  .swiper-scrollbar {
+    height: 6px;
+    width: 157px;
+    bottom: 18px;
+  }
 }
 

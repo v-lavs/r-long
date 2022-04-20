@@ -41,6 +41,13 @@
     padding-right: 25px;
   }
 }
+
+@include respond-to($sm){
+  .breadcrumb{
+    font-size: 12px;
+  }
+}
+
 @include respond-to($xs){
   .breadcrumb{
     padding-top: 0;

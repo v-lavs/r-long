@@ -47,3 +47,14 @@
     position: relative;
   }
 }
+
+@include respond-to($xs) {
+  .article{
+    margin-bottom: 40px;
+  }
+  .single{
+    .article .heading{
+      margin-bottom: 15px;
+    }
+  }
+}
