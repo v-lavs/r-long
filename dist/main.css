@@ -2803,7 +2803,7 @@ main:not(.home) {
 
 .advantages__icon {
   width: 80px;
-  height: 80px;
+  height: 83px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -3539,6 +3539,38 @@ main:not(.home) {
     height: 40px;
   }
 
+  .advantages {
+    padding-top: 105px;
+    background-image: url(../assets/img/bg-mob2.png);
+    background-size: contain;
+  }
+
+  .advantages__item {
+    width: 100%;
+    max-width: 420px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .advantages .container {
+    flex-wrap: wrap;
+  }
+
+  .advantages .part {
+    width: 100%;
+  }
+
+  .advantages .part_left {
+    height: auto;
+    min-height: 0;
+    padding-bottom: 124px;
+  }
+
+  .advantages .wrap-img {
+    width: 100%;
+    position: static;
+  }
+
   .section.article {
     margin-bottom: 0;
   }
@@ -3561,6 +3593,10 @@ main:not(.home) {
   .restriction__list-item {
     width: 100%;
     max-width: 228px;
+  }
+
+  .advantages .heading {
+    margin-bottom: 19px;
   }
 }
 

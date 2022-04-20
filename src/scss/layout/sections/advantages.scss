@@ -56,13 +56,57 @@
 
   &__icon {
     width: 80px;
-    height: 80px;
+    height: 83px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     flex-shrink: 0;
   }
-  &__text{
+
+  &__text {
     padding-left: 11px;
+  }
+}
+
+@include respond-to($xs) {
+  .advantages {
+    padding-top: 105px;
+    background-image: url(../assets/img/bg-mob2.png);
+    background-size: contain;
+
+    &__item {
+      width: 100%;
+      max-width: 420px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    .container {
+      flex-wrap: wrap;
+    }
+
+    .part {
+      width: 100%;
+
+      &_left {
+        height: auto;
+        min-height: 0;
+        padding-bottom: 124px;
+      }
+    }
+
+    .wrap-img {
+      width: 100%;
+      position: static;
+    }
+
+  }
+}
+
+@include respond-to($xxs) {
+  .advantages {
+    .heading {
+      margin-bottom: 19px;
+    }
   }
 }
