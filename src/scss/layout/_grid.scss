@@ -6,7 +6,7 @@
   margin: 0 auto;
 
   @include respond-to($xl){
-    max-width: 1080px;
+
   }
 
   @include respond-to($lg){

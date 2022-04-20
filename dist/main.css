@@ -1937,6 +1937,7 @@ main:not(.home) {
   align-items: center;
   min-height: 1020px;
   background: linear-gradient(283.67deg, #94cdf5 0%, #bddef6 41.15%, #e3f3ff 100%);
+  overflow: hidden;
 }
 
 .section-banner .container {
@@ -1944,10 +1945,12 @@ main:not(.home) {
 }
 
 .section-banner__slogan {
+  position: relative;
   font-size: 46px;
   line-height: 1.2;
   text-transform: uppercase;
   color: #0078cd;
+  z-index: 2;
 }
 
 .section-banner.anim_started .vertebra__part:first-child {
@@ -2039,7 +2042,7 @@ main:not(.home) {
 .section-banner__img-anim {
   position: absolute;
   z-index: 2;
-  animation: animX 2s both  linear, animY 2s both  linear;
+  animation: animX 2s both linear, animY 2s both linear;
 }
 
 @keyframes animX {
@@ -3023,10 +3026,6 @@ main:not(.home) {
 
   .card-author .part-right {
     padding-top: 10px;
-  }
-
-  .container {
-    max-width: 1080px;
   }
 
   .footer .menu__item {

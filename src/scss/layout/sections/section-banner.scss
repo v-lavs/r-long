@@ -4,16 +4,19 @@
   align-items: center;
   min-height: 1020px;
   background: linear-gradient(283.67deg, #94cdf5 0%, #bddef6 41.15%, #e3f3ff 100%);
+  overflow: hidden;
 
   .container {
     padding-bottom: 66px;
   }
 
   &__slogan {
+    position: relative;
     font-size: 46px;
     line-height: 1.2;
     text-transform: uppercase;
     color: #0078cd;
+    z-index: 2;
   }
 
   &.anim_started {
@@ -108,8 +111,8 @@
   &__img-anim {
     position: absolute;
     z-index: 2;
-    animation: animX 2s both  linear,
-    animY 2s both  linear;
+    animation: animX 2s both linear,
+    animY 2s both linear;
   }
 }
 
@@ -131,19 +134,31 @@
     bottom: 13%;
   }
 }
+
+
+@media screen and (max-width: 1660px) {
+  .section-banner {
+    &__anim {
+
+    }
+  }
+}
+
 @include respond-to($sm) {
   .section-banner {
     min-height: 780px;
 
-    .container{
+    .container {
       align-items: flex-end;
       padding-bottom: 118px;
     }
-    .img_back{
+
+    .img_back {
       display: none;
     }
   }
 }
+
 @include respond-to($xs) {
   .section-banner {
 
