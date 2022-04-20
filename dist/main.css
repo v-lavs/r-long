@@ -3232,6 +3232,27 @@ main:not(.home) {
   .post__thumb {
     padding-top: 64%;
   }
+
+  .about .container {
+    display: block;
+  }
+
+  .about .part {
+    width: 100%;
+    padding: 0;
+  }
+
+  .about .wrap-img {
+    position: relative;
+    max-width: 365px;
+    margin: 0 auto 30px;
+  }
+
+  .about .wrap-img img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 840px) {

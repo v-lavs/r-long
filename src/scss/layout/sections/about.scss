@@ -58,3 +58,26 @@
     max-width: initial;
   }
 }
+
+@include respond-to($md) {
+  .about {
+    .container {
+      display: block;
+    }
+    .part {
+      width: 100%;
+      padding: 0;
+    }
+
+    .wrap-img {
+      position: relative;
+      max-width: 365px;
+      margin: 0 auto 30px;
+      img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
