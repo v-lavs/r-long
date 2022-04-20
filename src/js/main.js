@@ -11,6 +11,28 @@
 
 
 $(document).ready(function () {
+    // Home Banner parallax
+    const $sectionBanner = $('.home .section-banner');
+
+    $(window).on('scroll', (e) => {
+        const offset = Math.floor($(window).scrollTop());
+        const bannerHeight = Math.floor($sectionBanner.height());
+
+        requestAnimationFrame(() => {
+            if (offset <= 0) {
+                $sectionBanner.css({
+                    opacity: 1,
+                    transform: 'translatey(0)'
+                })
+            }else if (offset < bannerHeight) {
+                $sectionBanner.css({
+                    opacity: 1 - ((offset * 1.2) / bannerHeight),
+                    transform: 'translatey(' + offset * 0.725 + 'px)'
+                })
+            }
+        });
+    });
+
     //MOBILE MENU
     const nav = $('.header__nav');
 

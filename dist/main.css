@@ -951,6 +951,13 @@ main:not(.home) {
   padding-top: 112px;
 }
 
+.main-content {
+  position: relative;
+  overflow: hidden;
+  margin-top: -100px;
+  z-index: 2;
+}
+
 .text_dark {
   color: #475056;
 }
@@ -1933,8 +1940,15 @@ main:not(.home) {
 
 .section-banner {
   position: relative;
-  background: linear-gradient(283.67deg, #94cdf5 0%, #bddef6 41.15%, #e3f3ff 100%);
+  display: flex;
+  align-items: center;
+  min-height: 1020px;
   overflow: hidden;
+  background: linear-gradient(283.67deg, #94cdf5 0%, #bddef6 41.15%, #e3f3ff 100%);
+  opacity: 1;
+  transition: opacity .2s;
+  will-change: transform;
+  z-index: 1;
 }
 
 .section-banner .container {
@@ -2470,7 +2484,6 @@ main:not(.home) {
   background: linear-gradient(180deg, #f5f7fa 17.99%, rgba(237, 239, 242, 0) 99.96%);
   border-radius: 80px;
   padding-top: 168px;
-  margin-top: -100px;
   z-index: 1;
 }
 

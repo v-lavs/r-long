@@ -1,7 +1,14 @@
 .section-banner {
   position: relative;
-  background: linear-gradient(283.67deg, #94cdf5 0%, #bddef6 41.15%, #e3f3ff 100%);
+  display: flex;
+  align-items: center;
+  min-height: 1020px;
   overflow: hidden;
+  background: linear-gradient(283.67deg, #94cdf5 0%, #bddef6 41.15%, #e3f3ff 100%);
+  opacity: 1;
+  transition: opacity .2s;
+  will-change: transform;
+  z-index: 1;
 
   .container {
     position: relative;

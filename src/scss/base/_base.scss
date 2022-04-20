@@ -18,6 +18,13 @@ main:not(.home) {
   padding-top: 112px;
 }
 
+.main-content {
+  position: relative;
+  overflow: hidden;
+  margin-top: -100px;
+  z-index: 2;
+}
+
 .text_dark {
   color: #475056
 }
