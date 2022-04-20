@@ -1933,24 +1933,23 @@ main:not(.home) {
 
 .section-banner {
   position: relative;
-  display: flex;
-  align-items: center;
-  min-height: 1020px;
   background: linear-gradient(283.67deg, #94cdf5 0%, #bddef6 41.15%, #e3f3ff 100%);
   overflow: hidden;
 }
 
 .section-banner .container {
+  position: relative;
+  display: flex;
+  align-items: center;
   padding-bottom: 66px;
+  min-height: 1020px;
 }
 
 .section-banner__slogan {
-  position: relative;
   font-size: 46px;
   line-height: 1.2;
   text-transform: uppercase;
   color: #0078cd;
-  z-index: 2;
 }
 
 .section-banner.anim_started .vertebra__part:first-child {
@@ -2012,11 +2011,12 @@ main:not(.home) {
   position: absolute;
   display: flex;
   justify-content: flex-end;
-  right: 0;
+  left: 50%;
   max-width: 980px;
   width: 100%;
   top: 0;
   bottom: 0;
+  z-index: 0;
 }
 
 .section-banner__anim .wrap-img_back {
@@ -3010,7 +3010,11 @@ main:not(.home) {
   margin-left: auto;
 }
 
-@media only screen and (max-width: 1480px) {
+@media only screen and (max-width: 1439px) {
+  .text-reveal:last-child .text-reveal__word {
+    font-size: 44px;
+  }
+
   .menu__item {
     font-size: 18px;
   }
@@ -3028,12 +3032,25 @@ main:not(.home) {
     padding-top: 10px;
   }
 
+  .container {
+    max-width: 1080px;
+  }
+
   .footer .menu__item {
     font-size: 18px;
   }
+
+  .section-banner__slogan {
+    font-size: 42px;
+    max-width: 636px;
+  }
+
+  .section-banner__anim {
+    left: 40%;
+  }
 }
 
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1200px) {
   .menu {
     flex-direction: column;
     padding: 60px 35px;
