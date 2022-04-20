@@ -61,3 +61,11 @@
     }
   }
 }
+
+@include respond-to($xs){
+  .types-anesthesia{
+    &__slide{
+      padding-top: 120px;
+    }
+  }
+}

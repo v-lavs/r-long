@@ -2528,7 +2528,7 @@ main:not(.home) {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: auto 100%;
-  min-height: 1044px;
+  height: 100%;
 }
 
 .assess-pain .block-info__text {
@@ -2721,7 +2721,7 @@ main:not(.home) {
   background-position: center;
   background-size: cover;
   color: #56AE3F;
-  box-shadow: 0 0 0 10px currentColor, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0 10px currentColor;
   z-index: 2;
 }
 
@@ -3263,6 +3263,50 @@ main:not(.home) {
   .section-banner .img_back {
     display: none;
   }
+
+  .assess-pain {
+    padding-top: 80px;
+    border-radius: 40px;
+    background-image: none;
+  }
+
+  .assess-pain .emoji-range {
+    padding: 130px 30px 10px;
+  }
+
+  .emotion {
+    width: 70px;
+    height: 70px;
+  }
+
+  .emotion .icon-down-em {
+    width: 12px;
+    height: 14px;
+  }
+
+  .range-slider input {
+    height: 40px;
+  }
+
+  .range-slider__handle {
+    box-shadow: 0 0 0 4px currentColor;
+    height: 41px;
+    width: 41px;
+  }
+
+  .range-slider__track {
+    clip-path: polygon(99% 0%, 100% 50%, 99% 100%, 0 100%, 0 0%);
+    height: 16px;
+  }
+
+  .range-slider__label {
+    display: none;
+  }
+
+  .emoticon__img {
+    max-width: 50px;
+    height: 50px;
+  }
 }
 
 @media only screen and (max-width: 580px) {
@@ -3294,6 +3338,10 @@ main:not(.home) {
   .heading {
     font-size: 26px;
     line-height: 1.38;
+  }
+
+  .heading_sm {
+    font-size: 22px;
   }
 
   .btn {
@@ -3449,6 +3497,30 @@ main:not(.home) {
 
   .wrap-slider {
     padding-bottom: 25px;
+  }
+
+  .types-anesthesia__slide {
+    padding-top: 120px;
+  }
+
+  .assess-pain .emoji-range {
+    padding-top: 100px;
+  }
+
+  .emotion {
+    width: 60px;
+    height: 60px;
+    top: -40px;
+  }
+
+  .emotion .icon-down-em {
+    width: 9px;
+    height: 11px;
+  }
+
+  .emoticon__img {
+    max-width: 40px;
+    height: 40px;
   }
 
   .section.article {

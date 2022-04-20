@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   background-position: top right;
   background-size: auto 100%;
-  min-height: 1044px;
+  height: 100%;
 
   .block-info__text {
     display: none;
@@ -88,7 +88,6 @@
     }
   }
 }
-
 
 .range-slider {
   position: relative;
@@ -201,7 +200,7 @@
     background-position: center;
     background-size: cover;
     color: #56AE3F;
-    box-shadow: 0 0 0 10px currentColor, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 10px currentColor;
     z-index: 2;
 
     &_1 {
@@ -223,6 +222,75 @@
     &_5 {
       color: #EF621F;
     }
+  }
+}
+
+@include respond-to($sm) {
+  .assess-pain {
+    padding-top: 80px;
+    border-radius: 40px;
+    background-image: none;
+
+    .emoji-range {
+      padding: 130px 30px 10px;
+    }
+  }
+  .emotion {
+    width: 70px;
+    height: 70px;
+
+    .icon-down-em {
+      width: 12px;
+      height: 14px;
+    }
+  }
+
+  .range-slider {
+    input {
+      height: 40px;
+    }
+
+    &__handle {
+      box-shadow: 0 0 0 4px currentColor;
+      height: 41px;
+      width: 41px;
+    }
+
+    &__track {
+      clip-path: polygon(99% 0%, 100% 50%, 99% 100%, 0 100%, 0 0%);
+      height: 16px;
+    }
+
+    &__label {
+      display: none;
+    }
+  }
+
+  .emoticon__img {
+    max-width: 50px;
+    height: 50px;
+  }
+}
+
+@include respond-to($xs) {
+  .assess-pain {
+    .emoji-range {
+      padding-top: 100px;
+    }
+  }
+  .emotion {
+    width: 60px;
+    height: 60px;
+    top: -40px;
+
+    .icon-down-em {
+      width: 9px;
+      height: 11px;
+    }
+  }
+  .emoticon__img {
+    max-width: 40px;
+    height: 40px;
   }
 }
 
