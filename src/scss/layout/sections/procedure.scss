@@ -116,6 +116,11 @@
 
 @include respond-to($lg) {
   .procedure {
+    &__list{
+      max-width: 1080px;
+      margin: 0 auto 190px;
+      width: 100%;
+    }
     &__step {
       width: 59.25%;
     }

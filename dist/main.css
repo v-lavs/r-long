@@ -3106,6 +3106,12 @@ main:not(.home) {
     align-items: baseline;
   }
 
+  .procedure__list {
+    max-width: 1080px;
+    margin: 0 auto 190px;
+    width: 100%;
+  }
+
   .procedure__step {
     width: 59.25%;
   }
