@@ -3154,6 +3154,19 @@ main:not(.home) {
     padding-bottom: 80px;
   }
 
+  .card-author .container {
+    align-items: center;
+  }
+
+  .card-author__avatar {
+    width: 150px;
+    height: 150px;
+  }
+
+  .card-author__title {
+    font-size: 32px;
+  }
+
   .container {
     max-width: 840px;
   }
@@ -3502,6 +3515,21 @@ main:not(.home) {
     display: flex;
   }
 
+  .card-author {
+    text-align: center;
+  }
+
+  .card-author .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+  }
+
+  .card-author .part-right {
+    width: 100%;
+    padding-left: 0;
+  }
+
   .container {
     max-width: 780px;
     padding: 0 40px;
@@ -3719,24 +3747,16 @@ main:not(.home) {
   }
 
   .card-author .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card-author .part-right {
-    width: 100%;
-    padding-left: 0;
+    padding: 0;
   }
 
   .card-author .activity {
     font-size: 16px;
-    text-align: center;
     margin-bottom: 25px;
   }
 
   .card-author__title {
     font-size: 26px;
-    text-align: center;
   }
 
   .card-author__avatar {
