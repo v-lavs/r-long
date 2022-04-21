@@ -114,6 +114,15 @@
   }
 }
 
+@include respond-to($lg) {
+  .procedure {
+    &__step {
+      width: 59.25%;
+    }
+  }
+}
+
+
 @include respond-to($md) {
   .procedure {
     background-image: none;
