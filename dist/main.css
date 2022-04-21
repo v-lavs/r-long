@@ -3973,17 +3973,13 @@ main:not(.home) {
   }
 }
 
-@media screen and (max-width: 360px) {
-  .text-reveal:last-child .text-reveal__word:first-of-type {
-    line-height: .4;
-  }
-
+@media screen and (max-width: 375px) {
   .section-banner .section-banner__img-anim {
     max-width: 85vw;
   }
 
   .section-banner .container {
-    min-height: 540px;
+    min-height: 100vh;
   }
 
   .section-banner .section-banner__slogan,
@@ -3991,6 +3987,12 @@ main:not(.home) {
   .section-banner .text-reveal__word-wrap {
     font-size: 21px;
     line-height: 1;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .text-reveal:last-child .text-reveal__word:first-of-type {
+    line-height: .4;
   }
 }
 
