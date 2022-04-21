@@ -3253,12 +3253,6 @@ main:not(.home, .page-404) {
     margin-left: 0;
   }
 
-  .disclaimer {
-    padding-top: 7px;
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-
   .section-banner .wrap-img_back {
     display: none;
   }
@@ -3538,6 +3532,12 @@ main:not(.home, .page-404) {
   .container {
     max-width: 780px;
     padding: 0 40px;
+  }
+
+  .footer .disclaimer {
+    padding-top: 7px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .section-banner .container {

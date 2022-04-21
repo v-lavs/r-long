@@ -160,13 +160,16 @@
       }
     }
   }
-  .disclaimer{
-    padding-top: 7px;
-    padding-left: 24px;
-    padding-right: 24px;
+}
+@include respond-to($sm){
+  .footer{
+    .disclaimer{
+      padding-top: 7px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
   }
 }
-
 @include respond-to($xs){
   .footer{
     border-radius: 40px 40px 0 0;
