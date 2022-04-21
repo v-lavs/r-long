@@ -24,7 +24,7 @@ $(document).ready(function () {
                     opacity: 1,
                     transform: 'translatey(0)'
                 })
-            }else if (offset < bannerHeight) {
+            } else if (offset < bannerHeight) {
                 $sectionBanner.css({
                     opacity: 1 - ((offset * 1.2) / bannerHeight),
                     transform: 'translatey(' + offset * 0.725 + 'px)'
@@ -81,6 +81,19 @@ $(document).ready(function () {
     $('#closeSearch').click(function (e) {
         e.preventDefault();
         searchBar.removeClass('active');
+        $('.search-form .form-control').val('');
+        $('.search-form .autocomplete__items').removeClass('active');
+    });
+
+    $('.search-form .form-control').on('input', (e) => {
+        const value = e.currentTarget.value;
+        const $autocompleteItems = $('.search-form .autocomplete__items');
+
+        if (value) {
+            $autocompleteItems.addClass('active');
+        } else {
+            $autocompleteItems.removeClass('active');
+        }
     });
 
 
