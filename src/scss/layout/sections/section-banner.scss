@@ -238,6 +238,9 @@
 }
 @media screen  and (max-width: 360px) {
   .section-banner{
+    .section-banner__img-anim {
+      max-width: 85vw;
+    }
     .container{
       min-height: 540px;
     }
@@ -245,7 +248,7 @@
     .text-reveal .text-reveal__word,
     .text-reveal__word-wrap {
       font-size: 21px;
-      line-height: .8;
+      line-height: 1;
     }
   }
 }
