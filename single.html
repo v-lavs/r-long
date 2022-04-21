@@ -23,7 +23,6 @@
     <!--header-->
     <header class="header">
         <div class="container-full">
-
             <button class="burger">
                 <span class="line"></span>
                 <span class="line"></span>
@@ -34,7 +33,6 @@
             </a>
 
             <nav class="header__nav">
-                <button class="btn-close"></button>
                 <ul class="menu">
                     <li class="menu__item">
                         <a href="index.html#about_anesthesia" class="menu__link">Про знеболення пологів</a>
@@ -61,11 +59,21 @@
             <button type="button" class="search-open" id="openSearch"><span>Пошук</span></button>
 
             <div class="search-bar">
-                <form action="/" method="get" class="search-form">
+                <form autocomplete="off" action="/" method="get" class="search-form">
                     <div class="input-group">
                         <button type="submit" class="search-btn"><span class="icon-search"></span>
                         </button>
-                        <input type="text" name="s" class="form-control" placeholder="Пошук...">
+                        <div class="autocomplete">
+                            <div class="autocomplete__items">
+                                <div class="autocomplete__item">
+                                    Місце ропівакаїну у сучасній реґіонарній анестезії
+                                </div>
+                                <div class="autocomplete__item">
+                                    Піперацилін/Тазобактам у сучасній клінічній практиці
+                                </div>
+                            </div>
+                            <input type="text" name="s" class="form-control" placeholder="Пошук...">
+                        </div>
                         <button type="button" class="close-btn" id="closeSearch"></button>
                     </div>
                 </form>
@@ -73,7 +81,6 @@
 
         </div>
     </header>
-    <div class="backdrop"></div>
 
     <main class="main single page">
         <div class="container-full">
@@ -310,11 +317,13 @@
                 </div>
             </div>
         </section>
+
+        <div class="share">
+            <img src="assets/img/share.png" alt="">
+        </div>
+        <button id="btnBack" class="btn-round btn-round_back"></button>
     </main>
-    <div class="share">
-        <img src="assets/img/share.png" alt="">
-    </div>
-    <button id="btnBack" class="btn-round btn-round_back"></button>
+
     <!--footer-->
     <footer class="footer">
         <div class="container-full">

@@ -209,6 +209,7 @@ main:not(.home, .page-404) {
   top: 294px;
   width: 47px;
   height: 248px;
+  z-index: 300;
 }
 
 @include respond-to($md) {
