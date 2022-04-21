@@ -3561,6 +3561,10 @@ main:not(.home, .page-404) {
     padding: 0 40px;
   }
 
+  .footer__link {
+    font-size: 14px;
+  }
+
   .footer .disclaimer {
     padding-top: 7px;
     padding-left: 24px;

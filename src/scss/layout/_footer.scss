@@ -163,6 +163,9 @@
 }
 @include respond-to($sm){
   .footer{
+    &__link{
+      font-size: 14px;
+    }
     .disclaimer{
       padding-top: 7px;
       padding-left: 24px;
