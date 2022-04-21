@@ -236,3 +236,16 @@
     }
   }
 }
+@media screen  and (max-width: 360px) {
+  .section-banner{
+    .container{
+      min-height: 540px;
+    }
+    .section-banner__slogan,
+    .text-reveal .text-reveal__word,
+    .text-reveal__word-wrap {
+      font-size: 21px;
+      line-height: .8;
+    }
+  }
+}

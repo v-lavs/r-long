@@ -5,6 +5,7 @@
 
   &__item {
     font-style: normal;
+    text-align: center;
     font-weight: 500;
     font-size: 20px;
     line-height: 1;
@@ -84,7 +85,7 @@
   }
 }
 
-@include respond-to($lg) {
+@include respond-to($md) {
 
   .menu {
     flex-direction: column;

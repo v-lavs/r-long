@@ -106,7 +106,7 @@
 
 }
 
-@include respond-to($lg) {
+@include respond-to($md) {
   .lang__toggle_desk {
     display: none;
   }
