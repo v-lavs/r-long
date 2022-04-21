@@ -3980,6 +3980,7 @@ main:not(.home) {
 
   .section-banner .container {
     min-height: 680px;
+    padding-bottom: 20vh;
   }
 
   .section-banner .section-banner__slogan,
