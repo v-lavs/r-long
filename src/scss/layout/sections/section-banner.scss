@@ -242,13 +242,22 @@
       max-width: 85vw;
     }
     .container{
-      height: 100vh;
+      min-height: 680px;
     }
     .section-banner__slogan,
     .text-reveal .text-reveal__word,
     .text-reveal__word-wrap {
       font-size: 21px;
       line-height: 1;
+    }
+  }
+}
+
+@media screen  and (max-width: 320px) {
+  .section-banner {
+
+    .container {
+      min-height: 570px;
     }
   }
 }

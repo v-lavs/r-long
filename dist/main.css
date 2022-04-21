@@ -3979,7 +3979,7 @@ main:not(.home) {
   }
 
   .section-banner .container {
-    min-height: 570px;
+    min-height: 680px;
   }
 
   .section-banner .section-banner__slogan,
@@ -3993,6 +3993,12 @@ main:not(.home) {
 @media screen and (max-width: 360px) {
   .text-reveal:last-child .text-reveal__word:first-of-type {
     line-height: .4;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .section-banner .container {
+    min-height: 570px;
   }
 }
 
