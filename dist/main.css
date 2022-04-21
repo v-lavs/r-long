@@ -3765,8 +3765,13 @@ main:not(.home) {
     flex-direction: column;
   }
 
+  .section-banner .section-banner__img-anim {
+    margin-top: 0;
+  }
+
   .section-banner .container {
     min-height: 755px;
+    align-items: center;
   }
 
   .section-banner .scroll-down {
@@ -3980,7 +3985,6 @@ main:not(.home) {
 
   .section-banner .container {
     min-height: 680px;
-    padding-bottom: 20vh;
   }
 
   .section-banner .section-banner__slogan,

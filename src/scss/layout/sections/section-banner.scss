@@ -214,8 +214,12 @@
 @include respond-to($xs) {
   .section-banner {
     flex-direction: column;
+    .section-banner__img-anim {
+      margin-top: 0;
+    }
     .container{
       min-height: 755px;
+      align-items: center;
     }
     .scroll-down {
       position: relative;
@@ -234,6 +238,7 @@
       font-size: 26px;
       line-height: 1.2;
     }
+
   }
 }
 @media screen  and (max-width: 380px) {
@@ -243,7 +248,7 @@
     }
     .container{
       min-height: 680px;
-      padding-bottom: 20vh;
+
     }
     .section-banner__slogan,
     .text-reveal .text-reveal__word,
