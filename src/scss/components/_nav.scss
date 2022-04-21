@@ -89,10 +89,16 @@
 
   .menu {
     flex-direction: column;
-    padding: 60px 35px;
+    padding: 60px 15px;
 
     &__link:before {
       display: none !important;
     }
+  }
+}
+
+@include respond-to($xs) {
+  .menu__item{
+    font-size: 16px;
   }
 }

@@ -56,6 +56,9 @@
 @media screen and (max-width: 1660px) {
   .page-404 {
     background: url(../assets/img/bg404.png) 0 bottom/auto 100% no-repeat, url(../assets/img/bird.png) 4% 46%/750px 735px no-repeat;
+    .btn_main {
+      margin-top: 43px;
+    }
   }
 }
 
@@ -64,8 +67,9 @@
     .number {
       font-size: 180px;
       bottom: auto;
-      transform: translateY(-50%);
+      transform: translateY(-120%);
     }
+
   }
 }
 
@@ -93,10 +97,6 @@
       margin-bottom: 80px;
       text-align: center;
       transform: none;
-    }
-
-    .btn_main {
-      margin-top: 43px;
     }
   }
 }

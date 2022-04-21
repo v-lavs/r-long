@@ -38,15 +38,8 @@ $(document).ready(function () {
 
     $('.burger').click(function (e) {
         e.preventDefault();
-        nav.addClass('open');
-
-        jQuery('.backdrop').fadeIn();
-    });
-
-    $('.btn-close, .backdrop').click(function (e) {
-        e.preventDefault();
-        nav.removeClass('open');
-        jQuery('.backdrop').fadeOut();
+        $('.burger').toggleClass('open')
+        nav.toggleClass('open');
     });
 
     // SMOOTH SCROLL TO ANCHOR
