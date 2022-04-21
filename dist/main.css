@@ -3973,13 +3973,13 @@ main:not(.home) {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
   .section-banner .section-banner__img-anim {
     max-width: 85vw;
   }
 
   .section-banner .container {
-    min-height: 100vh;
+    min-height: 570px;
   }
 
   .section-banner .section-banner__slogan,
