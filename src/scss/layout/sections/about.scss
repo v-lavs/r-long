@@ -61,6 +61,7 @@
 
 @include respond-to($md) {
   .about {
+    padding-top: 150px;
     .container {
       display: block;
     }
@@ -71,8 +72,11 @@
 
     .wrap-img {
       position: relative;
-      max-width: 370px;
+      max-width: 450px;
       margin: 0 auto 46px;
+      &:before{
+        border-width: 10px;
+      }
       img {
         max-width: 100%;
         width: 100%;
@@ -82,11 +86,21 @@
   }
 }
 
-@include respond-to($md) {
+@include respond-to($sm) {
   .about{
     border-radius: 40px 40px 0 0;
-    .wrap-img:before{
-      border-width: 10px;
+
+    .wrap-img{
+      width: 370px;
+    }
+  }
+}
+
+@include respond-to($xs) {
+  .about{
+    padding-top: 80px;
+    .wrap-img{
+      width: 260px;
     }
   }
 }

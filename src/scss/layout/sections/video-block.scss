@@ -72,3 +72,50 @@
     }
   }
 }
+
+@include respond-to($md) {
+  .video-block {
+    .heading_sm {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+  }
+  .video__info {
+    font-size: 16px;
+  }
+}
+
+@include respond-to($sm) {
+  .video-block {
+    .video__list {
+      justify-content: center;
+    }
+
+    .video__wrap {
+      width: 100%;
+      max-width: 458px;
+    }
+  }
+}
+
+@include respond-to($xs) {
+  .video-block {
+    .heading {
+      margin-bottom: 40px;
+    }
+
+    .decor-bg {
+      font-size: 22px;
+    }
+
+    .heading_sm {
+      font-size: 16px;
+      margin-bottom: 5px;
+
+    }
+  }
+  .video__info {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}

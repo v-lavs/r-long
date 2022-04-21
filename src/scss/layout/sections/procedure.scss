@@ -5,7 +5,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  min-height: 1762px;
   padding: 180px 0 172px;
   margin-bottom: 100px;
 
@@ -30,21 +29,24 @@
     &:last-child {
       margin-bottom: 0;
     }
+
     &:nth-child(odd) {
       margin-left: auto;
     }
+
     &:nth-child(even) {
-       .card__step{
-         margin-left: auto;
-       }
-     }
+      .card__step {
+        margin-left: auto;
+      }
+    }
   }
 
   .card {
     width: 100%;
     display: flex;
     align-items: flex-end;
-    will-change:transform;
+    will-change: transform;
+
     &__step {
       display: flex;
       justify-content: center;
@@ -102,6 +104,7 @@
       text-align: right;
 
     }
+
     .to-left {
       padding-right: 0;
       padding-left: 95px;
@@ -111,3 +114,124 @@
   }
 }
 
+@include respond-to($md) {
+  .procedure {
+    background-image: none;
+
+    &__step {
+      max-width: 440px;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      font-size: 16px;
+      align-items: center;
+
+      &__thumb {
+        position: relative;
+        width: 140px;
+        height: 140px;
+
+        &:before {
+          width: 40px;
+        }
+
+        &:nth-child(odd):before {
+          right: -7px;
+        }
+
+        &:nth-child(even):before {
+          left: -7px;
+        }
+      }
+
+      &__body {
+        padding-right: 45px;
+        padding-bottom: 0;
+      }
+
+      &__step {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+
+      .to-left {
+        padding-right: 0;
+        padding-left: 45px;
+
+      }
+    }
+  }
+}
+
+@include respond-to($sm) {
+  .procedure {
+border-radius: 40px 40px 40px 40px;
+    &__step {
+      max-width: 312px;
+      width: 100%;
+
+      &:nth-child(odd) {
+        margin: 0 0 50px;
+      }
+    }
+
+    &__list {
+      align-items: center;
+    }
+
+    .card {
+      flex-direction: column;
+
+      &__thumb {
+        width: 200px;
+        height: 200px;
+
+        &:before {
+          display: none;
+        }
+      }
+
+      &__body {
+        position: relative;
+        text-align: left;
+        order: 1;
+        padding: 10px 0 10px 56px;
+      }
+
+      &__step {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        top: 10px;
+        left: 0;
+      }
+
+      .to-left {
+        padding-left: 56px;
+      }
+    }
+  }
+}
+
+@include respond-to($xs) {
+  .procedure {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+    &__list {
+      margin-bottom: 0;
+    }
+
+    .heading {
+      margin-bottom: 80px;
+    }
+
+    .block-info {
+      display: none;
+    }
+  }
+}

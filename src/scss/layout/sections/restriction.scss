@@ -38,15 +38,33 @@
   }
 }
 
-@include respond-to($xs) {
+@include respond-to($md) {
   .restriction {
     &__list {
+      flex-wrap: wrap;
       justify-content: center;
     }
 
     &__list-item {
-      width: 50%;
+      width: 30%;
       margin-bottom: 15px;
+    }
+  }
+}
+
+@include respond-to($sm) {
+  .restriction {
+    &__list-item {
+      width: 50%;
+      max-width: 230px;
+    }
+  }
+}
+
+@include respond-to($xs) {
+  .restriction {
+    &__list-item {
+      width: 100%;
     }
   }
 }

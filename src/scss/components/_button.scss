@@ -92,6 +92,25 @@
 .close-btn {
   background-image: url(../assets/img/close.svg);
 }
+@include respond-to($md) {
+  .btn-round{
+    &_play {
+      width: 80px;
+      height: 80px;
+      background-size: 34px 25px;
+    }
+  }
+}
+
+@include respond-to($sm) {
+  .btn-round{
+    &_play {
+      width: 60px;
+      height: 60px;
+      background-size: 29px 20px;
+    }
+  }
+}
 
 @include respond-to($xs) {
   .btn{
@@ -105,6 +124,11 @@
 
     &_back {
       background-size: 16px 18px;
+    }
+    &_play{
+      width: 50px;
+      height: 50px;
+      background-size: 24px 15px;
     }
   }
 }

@@ -4,27 +4,33 @@
   line-height: 1.17;
   text-transform: uppercase;
   text-align: center;
+
   &_md {
     font-size: 32px;
     line-height: 1.06;
   }
-  &_sm{
+
+  &_sm {
     font-size: 26px;
     line-height: 1.3;
   }
+
   @include respond-to($lg) {
 
     &_md {
-      font-size: 26px;
+      font-size: 32px;
     }
 
   }
   @include respond-to($md) {
+    font-size: 32px;
+
     &_sm {
       font-size: 24px;
     }
   }
   @include respond-to($sm) {
+
     &_sm {
       font-size: 22px;
     }
@@ -34,6 +40,8 @@
     font-size: 26px;
     line-height: 1.38;
     text-align: center;
+
+    &_md,
     &_sm {
       font-size: 22px;
     }

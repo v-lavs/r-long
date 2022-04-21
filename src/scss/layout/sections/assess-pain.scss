@@ -264,9 +264,8 @@
 @include respond-to($sm) {
   .assess-pain {
     padding-top: 80px;
-    border-radius: 40px;
     background-image: none;
-
+    border-radius: 40px 40px 40px 40px;
     .emoji-range {
       padding: 130px 30px 10px;
     }

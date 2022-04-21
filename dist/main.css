@@ -2302,7 +2302,6 @@ main:not(.home) {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  min-height: 1762px;
   padding: 180px 0 172px;
   margin-bottom: 100px;
 }
@@ -3073,7 +3072,7 @@ main:not(.home) {
   }
 
   .heading_md {
-    font-size: 26px;
+    font-size: 32px;
   }
 
   .text-reveal:last-child .text-reveal__word:first-of-type {
@@ -3159,8 +3158,18 @@ main:not(.home) {
     padding-bottom: 150px;
   }
 
+  .heading {
+    font-size: 32px;
+  }
+
   .heading_sm {
     font-size: 24px;
+  }
+
+  .btn-round_play {
+    width: 80px;
+    height: 80px;
+    background-size: 34px 25px;
   }
 
   .accordion .panel__heading {
@@ -3263,6 +3272,69 @@ main:not(.home) {
     padding-top: 64%;
   }
 
+  .restriction__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .restriction__list-item {
+    width: 30%;
+    margin-bottom: 15px;
+  }
+
+  .procedure {
+    background-image: none;
+  }
+
+  .procedure__step {
+    max-width: 440px;
+    margin-bottom: 40px;
+  }
+
+  .procedure .card {
+    font-size: 16px;
+    align-items: center;
+  }
+
+  .procedure .card__thumb {
+    position: relative;
+    width: 140px;
+    height: 140px;
+  }
+
+  .procedure .card__thumb:before {
+    width: 40px;
+  }
+
+  .procedure .card__thumb:nth-child(odd):before {
+    right: -7px;
+  }
+
+  .procedure .card__thumb:nth-child(even):before {
+    left: -7px;
+  }
+
+  .procedure .card__body {
+    padding-right: 45px;
+    padding-bottom: 0;
+  }
+
+  .procedure .card__step {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .procedure .card .to-left {
+    padding-right: 0;
+    padding-left: 45px;
+  }
+
+  .about {
+    padding-top: 150px;
+  }
+
   .about .container {
     display: block;
   }
@@ -3274,22 +3346,18 @@ main:not(.home) {
 
   .about .wrap-img {
     position: relative;
-    max-width: 370px;
+    max-width: 450px;
     margin: 0 auto 46px;
+  }
+
+  .about .wrap-img:before {
+    border-width: 10px;
   }
 
   .about .wrap-img img {
     max-width: 100%;
     width: 100%;
     height: auto;
-  }
-
-  .about {
-    border-radius: 40px 40px 0 0;
-  }
-
-  .about .wrap-img:before {
-    border-width: 10px;
   }
 
   .range-slider input {
@@ -3319,11 +3387,49 @@ main:not(.home) {
     max-width: 60px;
     height: 60px;
   }
+
+  .advantages__item {
+    font-size: 16px;
+  }
+
+  .advantages .container {
+    flex-wrap: wrap;
+  }
+
+  .advantages .part {
+    width: 100%;
+  }
+
+  .advantages .part_left {
+    height: auto;
+    min-height: 0;
+    padding-bottom: 124px;
+  }
+
+  .advantages .wrap-img {
+    width: 100%;
+    position: static;
+  }
+
+  .video-block .heading_sm {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .video__info {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 840px) {
   .heading_sm {
     font-size: 22px;
+  }
+
+  .btn-round_play {
+    width: 60px;
+    height: 60px;
+    background-size: 29px 20px;
   }
 
   .accordion .panel {
@@ -3414,14 +3520,90 @@ main:not(.home) {
     margin: 15% 0 -9%;
   }
 
+  .page-count {
+    display: none;
+  }
+
+  .restriction__list-item {
+    width: 50%;
+    max-width: 230px;
+  }
+
+  .procedure {
+    border-radius: 40px 40px 40px 40px;
+  }
+
+  .procedure__step {
+    max-width: 312px;
+    width: 100%;
+  }
+
+  .procedure__step:nth-child(odd) {
+    margin: 0 0 50px;
+  }
+
+  .procedure__list {
+    align-items: center;
+  }
+
+  .procedure .card {
+    flex-direction: column;
+  }
+
+  .procedure .card__thumb {
+    width: 200px;
+    height: 200px;
+  }
+
+  .procedure .card__thumb:before {
+    display: none;
+  }
+
+  .procedure .card__body {
+    position: relative;
+    text-align: left;
+    order: 1;
+    padding: 10px 0 10px 56px;
+  }
+
+  .procedure .card__step {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    top: 10px;
+    left: 0;
+  }
+
+  .procedure .card .to-left {
+    padding-left: 56px;
+  }
+
+  .about {
+    border-radius: 40px 40px 0 0;
+  }
+
+  .about .wrap-img {
+    width: 370px;
+  }
+
   .assess-pain {
     padding-top: 80px;
-    border-radius: 40px;
     background-image: none;
+    border-radius: 40px 40px 40px 40px;
   }
 
   .assess-pain .emoji-range {
     padding: 130px 30px 10px;
+  }
+
+  .video-block .video__list {
+    justify-content: center;
+  }
+
+  .video-block .video__wrap {
+    width: 100%;
+    max-width: 458px;
   }
 }
 
@@ -3462,6 +3644,7 @@ main:not(.home) {
     text-align: center;
   }
 
+  .heading_md,
   .heading_sm {
     font-size: 22px;
   }
@@ -3488,6 +3671,12 @@ main:not(.home) {
 
   .btn-round_back {
     background-size: 16px 18px;
+  }
+
+  .btn-round_play {
+    width: 50px;
+    height: 50px;
+    background-size: 24px 15px;
   }
 
   .swiper-button-next,
@@ -3619,10 +3808,6 @@ main:not(.home) {
     padding: 10px 0;
   }
 
-  .page-count {
-    display: none;
-  }
-
   .post__title {
     font-size: 16px;
   }
@@ -3659,13 +3844,26 @@ main:not(.home) {
     padding-bottom: 25px;
   }
 
-  .restriction__list {
-    justify-content: center;
+  .restriction__list-item {
+    width: 100%;
   }
 
-  .restriction__list-item {
-    width: 50%;
-    margin-bottom: 15px;
+  .procedure {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+  }
+
+  .procedure__list {
+    margin-bottom: 0;
+  }
+
+  .procedure .heading {
+    margin-bottom: 80px;
+  }
+
+  .procedure .block-info {
+    display: none;
   }
 
   .types-anesthesia {
@@ -3675,6 +3873,14 @@ main:not(.home) {
   .types-anesthesia__slide {
     padding-top: 120px;
     max-width: 312px;
+  }
+
+  .about {
+    padding-top: 80px;
+  }
+
+  .about .wrap-img {
+    width: 260px;
   }
 
   .assess-pain .emoji-range {
@@ -3731,23 +3937,22 @@ main:not(.home) {
     padding-bottom: 15px;
   }
 
-  .advantages .container {
-    flex-wrap: wrap;
+  .video-block .heading {
+    margin-bottom: 40px;
   }
 
-  .advantages .part {
-    width: 100%;
+  .video-block .decor-bg {
+    font-size: 22px;
   }
 
-  .advantages .part_left {
-    height: auto;
-    min-height: 0;
-    padding-bottom: 124px;
+  .video-block .heading_sm {
+    font-size: 16px;
+    margin-bottom: 5px;
   }
 
-  .advantages .wrap-img {
-    width: 100%;
-    position: static;
+  .video__info {
+    font-size: 14px;
+    margin-bottom: 20px;
   }
 
   .section.article {
