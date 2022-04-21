@@ -3556,6 +3556,7 @@ main:not(.home, .page-404) {
     position: relative;
     transform: none;
     order: 1;
+    margin: auto;
   }
 
   .section-banner .section-banner__img-anim {
