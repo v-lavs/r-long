@@ -217,6 +217,9 @@
     .section-banner__img-anim {
       margin-top: 0;
     }
+    .section-banner__anim {
+      top: 50px;
+    }
     .container{
       min-height: 755px;
       align-items: center;
@@ -243,6 +246,9 @@
 }
 @media screen  and (max-width: 380px) {
   .section-banner{
+    .section-banner__anim {
+      top: 30px;
+    }
     .section-banner__img-anim {
       max-width: 85vw;
     }

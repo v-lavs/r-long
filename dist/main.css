@@ -3795,6 +3795,10 @@ main:not(.home) {
     margin-top: 0;
   }
 
+  .section-banner .section-banner__anim {
+    top: 50px;
+  }
+
   .section-banner .container {
     min-height: 755px;
     align-items: center;
@@ -4005,6 +4009,10 @@ main:not(.home) {
 }
 
 @media screen and (max-width: 380px) {
+  .section-banner .section-banner__anim {
+    top: 30px;
+  }
+
   .section-banner .section-banner__img-anim {
     max-width: 85vw;
   }
