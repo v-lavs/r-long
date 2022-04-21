@@ -17,7 +17,7 @@ body {
   }
 }
 
-main:not(.home) {
+main:not(.home, .page-404) {
   padding-top: 112px;
 }
 

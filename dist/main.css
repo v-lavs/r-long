@@ -881,6 +881,10 @@ figure {
   -moz-box-sizing: border-box;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 header,
 nav,
 section,
@@ -947,7 +951,7 @@ body.modal_open {
   height: 100%;
 }
 
-main:not(.home) {
+main:not(.home, .page-404) {
   padding-top: 112px;
 }
 
@@ -2965,11 +2969,7 @@ main:not(.home) {
 }
 
 .page-404 {
-  padding-top: 0 !important;
-  background-image: url(../assets/img/bg404.png);
-  background-repeat: no-repeat;
-  background-position: 0 bottom;
-  background-size: auto 100%;
+  background: url(../assets/img/bg404.png) 0 bottom/auto 100% no-repeat, url(../assets/img/bird.png) 14.5% 46%/750px 735px no-repeat;
   display: flex;
   align-items: center;
   color: #000000;
@@ -2993,26 +2993,14 @@ main:not(.home) {
 
 .page-404 .part_left {
   position: relative;
-  padding-top: 66.75%;
-}
-
-.page-404 .wrap-thumb {
-  position: absolute;
-  display: flex;
-  width: 750px;
-  right: 78px;
-  top: 0;
-  bottom: 0;
-  padding-bottom: 92px;
-  padding-right: 66px;
-  background-image: url(../assets/img/bird.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding-top: 49.25%;
 }
 
 .page-404 .number {
-  -webkit-text-stroke: 4px  #ffffff;
+  position: absolute;
+  left: -20%;
+  bottom: 0;
+  -webkit-text-stroke: 4px #ffffff;
   -webkit-text-fill-color: #0088EC;
   text-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
   font-size: 330px;
@@ -3020,6 +3008,12 @@ main:not(.home) {
   line-height: .7;
   margin-top: auto;
   margin-left: auto;
+}
+
+@media screen and (max-width: 1660px) {
+  .page-404 {
+    background: url(../assets/img/bg404.png) 0 bottom/auto 100% no-repeat, url(../assets/img/bird.png) 4% 46%/750px 735px no-repeat;
+  }
 }
 
 @media only screen and (max-width: 1440px) {
@@ -3050,6 +3044,17 @@ main:not(.home) {
 
   .section-banner__anim {
     left: 40%;
+  }
+
+  .page-404 {
+    background: url(../assets/img/bg404.png) 0 bottom/auto 100% no-repeat, url(../assets/img/bird.png) -2% 46%/50% auto no-repeat;
+    box-sizing: border-box;
+  }
+
+  .page-404 .number {
+    font-size: 270px;
+    bottom: 13px;
+    left: auto;
   }
 }
 
@@ -3443,17 +3448,17 @@ main:not(.home) {
   .video__info {
     font-size: 16px;
   }
+
+  .page-404 .number {
+    font-size: 180px;
+    bottom: auto;
+    transform: translateY(-50%);
+  }
 }
 
 @media only screen and (max-width: 840px) {
   .heading_sm {
     font-size: 22px;
-  }
-
-  .btn-round_play {
-    width: 60px;
-    height: 60px;
-    background-size: 29px 20px;
   }
 
   .accordion .panel {
@@ -3644,6 +3649,36 @@ main:not(.home) {
     width: 100%;
     max-width: 458px;
   }
+
+  .page-404 {
+    background-image: none;
+    padding-top: 126px;
+    padding-bottom: 40px;
+  }
+
+  .page-404 .container {
+    display: block;
+  }
+
+  .page-404 .part {
+    width: 100%;
+  }
+
+  .page-404 .part_left {
+    padding-top: 0;
+  }
+
+  .page-404 .number {
+    position: static;
+    font-size: 270px;
+    margin-bottom: 80px;
+    text-align: center;
+    transform: none;
+  }
+
+  .page-404 .btn_main {
+    margin-top: 43px;
+  }
 }
 
 @media only screen and (max-width: 580px) {
@@ -3695,6 +3730,12 @@ main:not(.home) {
   .text-reveal:last-child .text-reveal__word:first-of-type {
     font-size: 21px;
     padding-left: 5px;
+  }
+
+  .btn-round_play {
+    width: 60px;
+    height: 60px;
+    background-size: 29px 20px;
   }
 
   .btn {
@@ -4005,6 +4046,21 @@ main:not(.home) {
 
   .single .article .heading {
     margin-bottom: 15px;
+  }
+
+  .page-404 .number {
+    font-size: 148px;
+    margin-bottom: 43px;
+  }
+
+  .page-404 .wrap-btn {
+    text-align: center;
+  }
+
+  .page-404 .btn {
+    border-radius: 10px;
+    padding: 22px 16px;
+    font-size: 14px;
   }
 }
 

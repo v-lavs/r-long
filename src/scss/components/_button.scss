@@ -102,7 +102,7 @@
   }
 }
 
-@include respond-to($sm) {
+@include respond-to($xs) {
   .btn-round{
     &_play {
       width: 60px;
