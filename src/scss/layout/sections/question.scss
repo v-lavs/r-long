@@ -5,3 +5,11 @@
     margin: 0 auto 44px;
   }
 }
+
+@include respond-to($xs){
+  .questions{
+    .heading_sm {
+      font-size: 20px;
+    }
+  }
+}

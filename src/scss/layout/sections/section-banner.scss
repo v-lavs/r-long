@@ -17,8 +17,11 @@
     min-height: 940px;
   }
 
-  &__slogan {
+  &__title {
     font-size: 46px;
+  }
+
+  &__slogan {
     line-height: 1.2;
     text-transform: uppercase;
     color: #0078cd;
@@ -144,8 +147,8 @@
 
 @include respond-to($xl) {
   .section-banner {
-    &__slogan {
-      max-width: 670px;
+    &__title {
+      max-width: 530px;
     }
 
     &__anim {
@@ -193,9 +196,11 @@
       align-items: flex-start;
       justify-content: flex-end;
     }
+
     .section-banner__slogan {
       order: 2;
     }
+
     .section-banner__anim {
       top: 0;
       left: 0;
@@ -204,6 +209,7 @@
       order: 1;
       margin: auto;
     }
+
     .section-banner__img-anim {
       position: relative;
       max-width: 83vw;
@@ -215,29 +221,35 @@
 @include respond-to($xs) {
   .section-banner {
     flex-direction: column;
+
     .section-banner__img-anim {
       margin-top: 0;
     }
+
     .section-banner__anim {
       top: 50px;
     }
-    .container{
+
+    .container {
       min-height: 755px;
       align-items: center;
     }
+
     .scroll-down {
       position: relative;
       width: 40px;
       height: 40px;
-      left:auto;
+      left: auto;
       margin: 0 auto;
       display: block;
       transform: none;
     }
+
     .section-banner__slogan,
     .text-reveal__word-wrap {
       line-height: 1;
     }
+
     .text-reveal .text-reveal__word {
       font-size: 26px;
       line-height: 1.2;
@@ -245,17 +257,21 @@
 
   }
 }
-@media screen  and (max-width: 380px) {
-  .section-banner{
+
+@media screen and (max-width: 380px) {
+  .section-banner {
     .section-banner__anim {
       top: 30px;
     }
+
     .section-banner__img-anim {
       max-width: 85vw;
     }
-    .container{
+
+    .container {
       min-height: 680px;
     }
+
     .section-banner__slogan,
     .text-reveal .text-reveal__word,
     .text-reveal__word-wrap {
@@ -265,7 +281,7 @@
   }
 }
 
-@media screen  and (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .section-banner {
 
     .container {
