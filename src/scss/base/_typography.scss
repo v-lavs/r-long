@@ -15,28 +15,36 @@
     line-height: 1.3;
   }
 
-  @include respond-to($lg) {
+}
 
+@include respond-to($lg) {
+  .heading {
     &_md {
       font-size: 32px;
     }
-
   }
-  @include respond-to($md) {
+}
+
+@include respond-to($md) {
+  .heading {
     font-size: 32px;
 
     &_sm {
       font-size: 24px;
     }
   }
-  @include respond-to($sm) {
+}
 
+@include respond-to($sm) {
+  .heading {
     &_sm {
       font-size: 22px;
     }
   }
+}
 
-  @include respond-to($xs) {
+@include respond-to($xs) {
+  .heading {
     font-size: 26px;
     line-height: 1.38;
     text-align: center;
