@@ -71,3 +71,22 @@
     }
   }
 }
+
+@media screen and (max-width: 375px){
+  .types-anesthesia .wrap-slider {
+    padding-bottom: 50px;
+  }
+  .types-anesthesia__slider {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .types-anesthesia__slide {
+    padding: 100px 25px 30px;
+  }
+  .types-anesthesia__slide:before {
+    width: 45px;
+    height: 45px;
+    top: 30px;
+    left: 25px;
+  }
+}

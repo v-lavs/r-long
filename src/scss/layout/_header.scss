@@ -129,7 +129,9 @@
   }
   .lang__toggle_mob {
     display: flex;
+    font-size: 20px;
   }
+
   .burger {
     display: flex !important;
   }
@@ -163,8 +165,6 @@
   }
 }
 
-@include respond-to($sm) {
-}
 
 @include respond-to($xs) {
   .header {
@@ -174,9 +174,6 @@
     .container-full:before {
       top: -44px;
       bottom: -28px;
-    }
-    .lang__toggle_mob{
-      font-size: 16px;
     }
   }
 }
